@@ -11,9 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Controller for Product Listing/Search page
- */
 
 @Controller
 @RequestMapping(value = "students")
@@ -21,25 +18,24 @@ public class StudentsController {
 
     private static final Log logger = getLogger();
 
-    private static Log getLogger(){
-        try{
+    private static Log getLogger() {
+        try {
             return LogFactory.getLog(StudentsController.class);
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return null;
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "list")
-    public ModelAndView showPage(){
+    public ModelAndView showPage() {
         logger.info("Returning products page view");
 
-        Map map = new HashMap();
+        Map<String, String> map = new HashMap<String, String>();
         map.put("name", "Shirish");
         map.put("age", "24");
 
         return new ModelAndView("studentsList.jsp", map);
     }
-
 
 }
