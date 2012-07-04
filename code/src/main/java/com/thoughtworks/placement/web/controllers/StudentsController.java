@@ -13,7 +13,7 @@ import java.util.Map;
 
 
 @Controller
-@RequestMapping(value = "students")
+@RequestMapping(value = "/students")
 public class StudentsController {
 
     private static final Log logger = getLogger();

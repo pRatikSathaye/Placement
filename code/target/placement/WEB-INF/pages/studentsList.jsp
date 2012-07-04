@@ -25,6 +25,12 @@
         </tbody>
     </table>
 
-</div>
+
+
+    <footer>
+        <p>&copy; ThoughtWorks Inc., 2012</p>
+    </footer>
+
+</div> <!-- /container -->
 
 <jsp:include page="common/scripts.jsp"/>
