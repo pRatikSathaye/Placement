@@ -1,0 +1,230 @@
+Jul 4, 2012 8:06:59 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Users/ShirishP/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jul 4, 2012 8:07:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:07:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 677 ms
+Jul 4, 2012 8:07:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 4, 2012 8:07:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.28
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/docs
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/examples
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/host-manager
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/manager
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/ROOT
+Jul 4, 2012 8:07:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:07:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:07:00 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 504 ms
+Jul 4, 2012 8:09:07 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:09:07 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:09:07 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:09:09 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Users/ShirishP/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jul 4, 2012 8:09:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:09:10 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 474 ms
+Jul 4, 2012 8:09:10 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 4, 2012 8:09:10 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.28
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/docs
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/examples
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/host-manager
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/manager
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/ROOT
+Jul 4, 2012 8:09:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:09:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:09:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 534 ms
+Jul 4, 2012 8:10:15 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:10:15 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:10:15 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:10:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Users/ShirishP/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jul 4, 2012 8:10:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:10:16 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 475 ms
+Jul 4, 2012 8:10:16 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 4, 2012 8:10:16 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.28
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/docs
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/examples
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/host-manager
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/manager
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/ROOT
+Jul 4, 2012 8:10:16 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:10:16 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:10:16 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 515 ms
+Jul 4, 2012 8:11:48 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Jul 4, 2012 8:11:48 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:11:48 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:11:49 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:11:49 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Users/ShirishP/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:11:49 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:11:49 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 483 ms
+Jul 4, 2012 8:11:49 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 4, 2012 8:11:49 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.28
+Jul 4, 2012 8:11:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/docs
+Jul 4, 2012 8:11:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/examples
+Jul 4, 2012 8:11:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/host-manager
+Jul 4, 2012 8:11:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/manager
+Jul 4, 2012 8:11:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/ROOT
+Jul 4, 2012 8:11:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 8:11:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 8:11:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 484 ms
+Jul 4, 2012 8:35:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/placement.war
+Jul 4, 2012 8:35:41 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization started
+Jul 4, 2012 8:35:41 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 04 20:35:41 GMT+05:30 2012]; root of context hierarchy
+Jul 4, 2012 8:35:41 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/placement-servlet.xml]
+Jul 4, 2012 8:35:41 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c84f665: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 4, 2012 8:35:41 PM org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/students/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.thoughtworks.placement.web.controllers.StudentsController.showPage()
+Jul 4, 2012 8:35:41 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Jul 4, 2012 8:35:41 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization completed in 725 ms
+Jul 4, 2012 8:36:05 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:36:11 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:36:25 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:36:36 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:36:43 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:36:44 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 8:41:02 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 04 20:35:41 GMT+05:30 2012]; root of context hierarchy
+Jul 4, 2012 8:41:02 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c84f665: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 4, 2012 8:41:04 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/placement]
+Jul 4, 2012 8:41:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/placement.war
+Jul 4, 2012 8:41:04 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization started
+Jul 4, 2012 8:41:04 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 04 20:41:04 GMT+05:30 2012]; root of context hierarchy
+Jul 4, 2012 8:41:04 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/placement-servlet.xml]
+Jul 4, 2012 8:41:04 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce84763: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 4, 2012 8:41:04 PM org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/students/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.thoughtworks.placement.web.controllers.StudentsController.showPage()
+Jul 4, 2012 8:41:05 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Jul 4, 2012 8:41:05 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization completed in 572 ms
+Jul 4, 2012 8:41:26 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning products page view
+Jul 4, 2012 9:59:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 9:59:23 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 9:59:23 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Jul 4, 2012 9:59:23 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 04 20:41:04 GMT+05:30 2012]; root of context hierarchy
+Jul 4, 2012 9:59:23 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ce84763: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 4, 2012 9:59:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 9:59:23 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Jul 4, 2012 9:59:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Jul 4, 2012 9:59:23 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
