@@ -32,7 +32,7 @@ public class StudentsController {
         logger.info("Returning products page view");
 
         Map<String, String> map = new HashMap<String, String>();
-        map.put("name", "Shirish");
+        map.put("name", "Shirish Padalkar");
         map.put("age", "24");
 
         return new ModelAndView("studentsList.jsp", map);
