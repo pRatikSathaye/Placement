@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <!-- This is used to specify base URL for all relative URLs on page -->
     <base href="${pageContext.request.contextPath}/">
     <title>Placement</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

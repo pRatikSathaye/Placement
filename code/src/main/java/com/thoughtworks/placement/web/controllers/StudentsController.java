@@ -29,7 +29,7 @@ public class StudentsController {
 
     @RequestMapping(method = RequestMethod.GET, value = "list")
     public ModelAndView showPage() {
-        logger.info("Returning products page view");
+        logger.info("Returning student list view");
 
         Map<String, String> map = new HashMap<String, String>();
         map.put("name", "Shirish Padalkar");
