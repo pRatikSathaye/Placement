@@ -13,7 +13,7 @@ import java.util.Map;
 
 
 @Controller
-@RequestMapping(value = "/students")
+@RequestMapping(value = "/student")
 public class StudentsController {
 
     private static final Log logger = getLogger();
@@ -25,6 +25,11 @@ public class StudentsController {
             ex.printStackTrace();
         }
         return null;
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "register")
+    public ModelAndView register() {
+        return new ModelAndView("registration");
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "list")
