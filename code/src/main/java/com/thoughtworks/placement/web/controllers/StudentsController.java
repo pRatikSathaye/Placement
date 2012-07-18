@@ -35,7 +35,7 @@ public class StudentsController {
         map.put("name", "Shirish Padalkar");
         map.put("age", "24");
 
-        return new ModelAndView("studentsList.jsp", map);
+        return new ModelAndView("studentsList", map);
     }
 
 }

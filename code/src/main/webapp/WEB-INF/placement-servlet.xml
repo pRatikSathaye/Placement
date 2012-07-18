@@ -8,17 +8,22 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
     <!-- For scanning @Controller and @Component annotations -->
-    <context:annotation-config /> <mvc:annotation-driven/>
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
     <context:component-scan base-package="com.thoughtworks.placement.web.*"/>
 
     <!-- This is required to serve static resources -->
-    <mvc:resources mapping="/resources/**" location="/resources/" />
-    <mvc:resources mapping="/layout.html" location="/WEB-INF/layout.html" />
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <mvc:resources mapping="/layout.html" location="/WEB-INF/layout.html"/>
 
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
         <property name="prefix" value="/WEB-INF/pages/"/>
-        <property name="suffix" value=""/>
+        <property name="suffix" value=".vm"/>
     </bean>
 
 </beans>

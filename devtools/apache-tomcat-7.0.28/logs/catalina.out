@@ -1,0 +1,106 @@
+Jul 18, 2012 3:04:17 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Users/ShirishP/Library/Java/Extensions:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Jul 18, 2012 3:04:18 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Jul 18, 2012 3:04:18 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 560 ms
+Jul 18, 2012 3:04:18 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Jul 18, 2012 3:04:18 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.28
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/docs
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/examples
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/host-manager
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/manager
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/ROOT
+Jul 18, 2012 3:04:18 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Jul 18, 2012 3:04:18 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Jul 18, 2012 3:04:18 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 601 ms
+Jul 18, 2012 3:04:28 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/placement.war
+Jul 18, 2012 3:04:28 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization started
+Jul 18, 2012 3:04:28 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 18 15:04:28 GMT+05:30 2012]; root of context hierarchy
+Jul 18, 2012 3:04:28 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/placement-servlet.xml]
+Jul 18, 2012 3:04:28 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f031310: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 18, 2012 3:04:28 PM org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/students/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.thoughtworks.placement.web.controllers.StudentsController.showPage()
+Jul 18, 2012 3:04:29 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Jul 18, 2012 3:04:29 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/layout.html] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+Jul 18, 2012 3:04:29 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization completed in 773 ms
+Jul 18, 2012 3:04:38 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning student list view
+Jul 18, 2012 3:05:10 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 18 15:04:28 GMT+05:30 2012]; root of context hierarchy
+Jul 18, 2012 3:05:10 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f031310: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 18, 2012 3:05:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/placement]
+Jul 18, 2012 3:05:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/placement.war
+Jul 18, 2012 3:05:11 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization started
+Jul 18, 2012 3:05:11 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 18 15:05:11 GMT+05:30 2012]; root of context hierarchy
+Jul 18, 2012 3:05:11 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/placement-servlet.xml]
+Jul 18, 2012 3:05:12 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@21882d18: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,velocityConfig,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 18, 2012 3:05:12 PM org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/students/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.thoughtworks.placement.web.controllers.StudentsController.showPage()
+Jul 18, 2012 3:05:12 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Jul 18, 2012 3:05:12 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/layout.html] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+Jul 18, 2012 3:05:12 PM org.springframework.web.servlet.view.velocity.VelocityConfigurer postProcessVelocityEngine
+INFO: ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+Jul 18, 2012 3:05:12 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization completed in 705 ms
+Jul 18, 2012 3:05:17 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning student list view
+Jul 18, 2012 3:05:17 PM org.springframework.ui.velocity.CommonsLoggingLogSystem logVelocityMessage
+SEVERE: ResourceManager : unable to find resource '/WEB-INF/pages/studentsList.jsp.vm' in any resource loader.
+Jul 18, 2012 3:05:44 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 18 15:05:11 GMT+05:30 2012]; root of context hierarchy
+Jul 18, 2012 3:05:44 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@21882d18: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,velocityConfig,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 18, 2012 3:05:45 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/placement]
+Jul 18, 2012 3:05:45 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /Users/ShirishP/Projects/Placement/devtools/apache-tomcat-7.0.28/webapps/placement.war
+Jul 18, 2012 3:05:45 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization started
+Jul 18, 2012 3:05:45 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'placement-servlet': startup date [Wed Jul 18 15:05:45 GMT+05:30 2012]; root of context hierarchy
+Jul 18, 2012 3:05:45 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/placement-servlet.xml]
+Jul 18, 2012 3:05:45 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@150ac9a8: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,studentsController,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,velocityConfig,viewResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+Jul 18, 2012 3:05:45 PM org.springframework.web.servlet.handler.AbstractHandlerMethodMapping registerHandlerMethod
+INFO: Mapped "{[/students/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.thoughtworks.placement.web.controllers.StudentsController.showPage()
+Jul 18, 2012 3:05:45 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+Jul 18, 2012 3:05:45 PM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/layout.html] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+Jul 18, 2012 3:05:45 PM org.springframework.web.servlet.view.velocity.VelocityConfigurer postProcessVelocityEngine
+INFO: ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+Jul 18, 2012 3:05:46 PM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'placement': initialization completed in 700 ms
+Jul 18, 2012 3:05:48 PM com.thoughtworks.placement.web.controllers.StudentsController showPage
+INFO: Returning student list view
