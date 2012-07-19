@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.vm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/logs/catalina.out" afterPath="$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/logs/catalina.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iml" afterPath="$PROJECT_DIR$/placement.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.ipr" afterPath="$PROJECT_DIR$/placement.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" />
     </list>
     <ignored path="placement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,11 +73,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-19.318182">
-              <folding>
-                <marker date="1342604104000" expanded="true" signature="1163:1231" placeholder="..." />
-                <marker date="1342604104000" expanded="true" signature="1336:1550" placeholder="..." />
-              </folding>
+            <state line="17" column="85" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-0.77272725">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,34 +82,7 @@
       <file leaf-file-name="registration.vm" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="106" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-35.96154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="31" selection-start="971" selection-end="974" vertical-scroll-proportion="-23.181818">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="21" selection-start="5396" selection-end="5396" vertical-scroll-proportion="3.1965811">
+            <state line="46" column="37" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +91,45 @@
       <file leaf-file-name="StudentsController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="45" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+            <state line="29" column="65" selection-start="830" selection-end="838" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentsControllerTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="25" selection-start="782" selection-end="782" vertical-scroll-proportion="0.33211234">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="8" selection-start="5631" selection-end="5631" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="10" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studentsList.vm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="308" selection-end="309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,8 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/common/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/common/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/common/decorator.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/simpleFile.jsp" />
@@ -153,12 +157,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.vm" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
       </list>
     </option>
   </component>
@@ -238,7 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,15 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,111 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -395,6 +289,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="placement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,21 +339,31 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.thoughtworks.placement.web.controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources" />
@@ -451,164 +373,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/logs/catalina.out</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement.war</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/META-INF/MANIFEST.MF</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/META-INF/maven/com.thoughtworks/placement/pom.properties</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/META-INF/maven/com.thoughtworks/placement/pom.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/classes/com/thoughtworks/placement/web/controllers/StudentsController.class</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/decorator.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/decorator.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/layout.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/aopalliance-1.0.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/commons-logging-1.1.1.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/jstl-1.1.2.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/sitemesh-3.0-alpha-1.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-context-support-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-expression-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/spring-webmvc-3.1.1.RELEASE.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/lib/standard-1.1.2.jar</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/common/decorator.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/common/header.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/common/menu.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/common/scripts.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/simpleFile.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/pages/studentsList.jsp</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/placement-servlet.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/sitemesh3.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/WEB-INF/web.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/css/bootstrap-responsive.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/css/bootstrap-responsive.min.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/css/bootstrap.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/css/bootstrap.min.css</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/img/glyphicons-halflings-white.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/img/glyphicons-halflings.png</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-alert.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-button.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-carousel.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-collapse.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-dropdown.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-modal.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-popover.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-scrollspy.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-tab.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-tooltip.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-transition.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap-typeahead.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/bootstrap.min.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/../devtools/apache-tomcat-7.0.28/webapps/placement/resources/js/jquery.js</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.studentsList.jsp">
+  <component name="RunManager" selected="JUnit.StudentsControllerTest">
     <configuration default="false" name="studentsList.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/pages/studentsList.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -645,6 +410,34 @@
           <artifact name="placement:war exploded" />
         </option>
       </method>
+    </configuration>
+    <configuration default="false" name="StudentsControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="placement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.StudentsControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -789,8 +582,9 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.studentsList.jsp" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StudentsControllerTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -844,6 +638,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -854,7 +649,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -953,76 +747,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap-alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="16" selection-start="3903" selection-end="3903" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="260" selection-end="260" vertical-scroll-proportion="0.27868852">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="171" selection-end="171" vertical-scroll-proportion="0.12862547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="138" selection-end="138" vertical-scroll-proportion="0.041514043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="1534" selection-end="1534" vertical-scroll-proportion="-19.318182">
-          <folding>
-            <marker date="1342604104000" expanded="true" signature="1163:1231" placeholder="..." />
-            <marker date="1342604104000" expanded="true" signature="1336:1550" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="971" selection-end="974" vertical-scroll-proportion="-23.181818">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
+        <state line="2" column="31" selection-start="138" selection-end="138" vertical-scroll-proportion="0.041514043" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery.js">
@@ -1032,39 +759,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/jquery.validate.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="791" column="17" selection-start="9982" selection-end="9995" vertical-scroll-proportion="0.6820513">
-          <folding />
-        </state>
+        <state line="791" column="17" selection-start="9982" selection-end="9995" vertical-scroll-proportion="0.6820513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="638" selection-end="638" vertical-scroll-proportion="0.2711223">
+        <state line="19" column="33" selection-start="638" selection-end="638" vertical-scroll-proportion="0.2711223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="60" selection-start="309" selection-end="309" vertical-scroll-proportion="0.1706399" />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="85" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-0.77272725">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/registration.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="106" selection-start="2197" selection-end="2197" vertical-scroll-proportion="-35.96154">
+        <state line="46" column="37" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/studentsList.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="308" selection-end="309" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="10" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar!/org/springframework/mock/web/MockHttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="85" selection-start="220" selection-end="238" vertical-scroll-proportion="0.14166667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="21" selection-start="5396" selection-end="5396" vertical-scroll-proportion="3.1965811">
+        <state line="163" column="8" selection-start="5631" selection-end="5631" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="65" selection-start="830" selection-end="838" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/surefire-reports/com.thoughtworks.placement.web.controllers.StudentsControllerTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.1.1.RELEASE/spring-test-3.1.1.RELEASE.jar!/org/springframework/mock/web/MockHttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="11" selection-start="1384" selection-end="1407" vertical-scroll-proportion="-2.7931035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="782" selection-end="782" vertical-scroll-proportion="0.33211234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>placement:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>placement</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
