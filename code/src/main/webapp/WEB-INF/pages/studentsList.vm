@@ -1,21 +1,18 @@
-<!-- Main hero unit for a primary marketing message or call to action -->
-<div class="hero-unit">
-    <h1>Hello, world! from Velocity</h1>
-</div>
-
 <h1>Students list:</h1>
-
-<table>
+<br />
+<table class="table table-bordered table-striped">
     <thead>
     <tr>
-        <th>Student Name</th>
-        <th>Age</th>
+        <th>Name</th>
+        <th>Email</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>${name}</td>
-        <td>${age}</td>
-    </tr>
+        #foreach( $student in $studentList )
+        <tr>
+            <td>${student.firstName} ${student.middleName} ${student.lastName}</td>
+            <td>${student.email}</td>
+        </tr>
+        #end
     </tbody>
 </table>
