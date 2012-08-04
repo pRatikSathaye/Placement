@@ -1,0 +1,13 @@
+<h1>Profile: ${student.fullName}</h1>
+
+<p>
+
+    Student ID: ${student.SID} <br/>
+    Name: ${student.fullName} <br/>
+    Email: ${student.email} <br/>
+    Phone: ${student.phoneNumber} <br/>
+    Marks: SSC ${student.marks.sscMarks} <br/>
+    Marks: HSC ${student.marks.hscMarks} <br/>
+    Marks: Current ${student.marks.currentDegreeMarks} <br/>
+
+</p>

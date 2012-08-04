@@ -1,4 +1,4 @@
-<form class="form-horizontal" id="studentRegistrationForm" method='post' action=''>
+<form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/register">
     <fieldset>
 
         <legend>Register Student </legend>
@@ -6,37 +6,37 @@
         <br/><p>Enter all student details and press <b>Register</b>.</p><br/>
 
         <div class="control-group">
-            <label class="control-label" for="student_id">Student ID</label>
+            <label class="control-label">Student ID</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="student_id" name="student_id" rel="popover"
-                       data-original-title="Student University ID"
-                       data-content="Enter your unique university registration number." >
+                #springFormInput ('student.SID' , 'class="input-xlarge" rel="popover"
+                                                   data-original-title="Student University ID"
+                                                   data-content="Enter your unique university registration number."')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="student_name">Name</label>
+            <label class="control-label">Name</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="student_name" name="student_name" rel="popover"
-                       data-original-title="Full Name"
-                       data-content="Enter your full name as appears in the University certificates." >
+                #springFormInput ('student.fullName' , 'class="input-xlarge" rel="popover"
+                                                        data-original-title="Full Name"
+                                                        data-content="Enter your full name as appears in the University certificates."')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="password">Password</label>
+            <label class="control-label">Password</label>
 
             <div class="controls">
-                <input type="password" class="input-xlarge" id="password" name="password" rel="popover"
-                       data-original-title="Password"
-                       data-content="Enter a strong password. Must be greater than 6 letters. Don't forget it!" >
+                #springFormPasswordInput ("student.password" , 'class="input-xlarge" rel="popover"
+                                                        data-original-title="Password"
+                                                        data-content="Enter a strong password. Must be greater than 6 letters."')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="confirmPassword">Confirm Password</label>
+            <label class="control-label">Confirm Password</label>
 
             <div class="controls">
                 <input type="password" class="input-xlarge" id="confirmPassword" name="confirmPassword" rel="popover"
@@ -46,53 +46,53 @@
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="phone">Phone</label>
+            <label class="control-label">Phone</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="phone" name="phone" rel="popover"
-                       data-original-title="Phone/Mobile"
-                       data-content="Enter your contact number" >
+                #springFormInput ('student.phoneNumber' , 'class="input-xlarge" rel="popover"
+                                                            data-original-title="Mobile Phone"
+                                                            data-content="Enter your contact number"')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="student_email">Email</label>
+            <label class="control-label">Email</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="student_email" name="student_email" rel="popover"
-                       data-original-title="Email"
-                       data-content="Enter your email Id for placement related communications." >
+                #springFormInput ('student.email' , 'class="input-xlarge" rel="popover"
+                                                            data-original-title="Email"
+                                                            data-content="Enter your email Id for placement related communications."')
             </div>
         </div>
 
 
         <div class="control-group">
-            <label class="control-label" for="marksInSSC">Marks (SSC)</label>
+            <label class="control-label">Marks (SSC)</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="marksInSSC" name="marksInSSC" rel="popover"
-                       data-original-title="SSC Marks"
-                       data-content="Enter your SSC (10th Standard) marks in percentage" >
+                #springFormInput ('student.marks.sscMarks' , 'class="input-xlarge" rel="popover"
+                                                            data-original-title="SSC Marks"
+                                                            data-content="Enter your SSC (10th Standard) marks in percentage"')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="marksInHSC">Marks (HSC)</label>
+            <label class="control-label">Marks (HSC)</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="marksInHSC" name="marksInHSC" rel="popover"
-                       data-original-title="HSC Marks"
-                       data-content="Enter your HSC (12th Standard) marks in percentage" >
+                #springFormInput ('student.marks.hscMarks' , 'class="input-xlarge" rel="popover"
+                                                            data-original-title="HSC Marks"
+                                                            data-content="Enter your HSC (12th Standard) marks in percentage"')
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="marksInCurrentDegree">Marks (Current)</label>
+            <label class="control-label">Marks (Current)</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="marksInCurrentDegree" name="marksInCurrentDegree" rel="popover"
-                       data-original-title="Current Degree Marks"
-                       data-content="Enter your average overall marks in percentage (for current degree)" >
+                #springFormInput ('student.marks.currentDegreeMarks' , 'class="input-xlarge" rel="popover"
+                                                            data-original-title="Current Degree Marks"
+                                                            data-content="Enter your average overall marks in percentage (for current degree)"')
             </div>
         </div>
 
@@ -119,9 +119,9 @@
 
         $("#studentRegistrationForm").validate({
             rules:{
-                student_id: "required",
+                SID: "required",
 
-                student_name:"required",
+                fullName:"required",
 
                 password: {
                     required:true,
@@ -132,30 +132,30 @@
                     equalTo:"#password"
                 },
 
-                phone: {
+                phoneNumber: {
                     required:true,
                     number:true,
                     minlength:10
                 },
 
-                student_email:{
+                email:{
                     required:true,
                     email:true
                 },
 
-                marksInSSC:{
+                'marks.hscMarks':{
                     required:true,
                     number:true,
                     range:[0,100]
                 },
 
-                marksInHSC:{
+                'marks.sscMarks':{
                     required:true,
                     number:true,
                     range:[0,100]
                 },
 
-                marksInCurrentDegree:{
+                'marks.currentDegreeMarks':{
                     required:true,
                     number:true,
                     range:[0,100]
@@ -164,9 +164,9 @@
             },
             messages:{
 
-                student_id: "Enter your University provided unique student registration id",
+                SID: "Enter your University provided unique student registration id",
 
-                student_name:"Enter your first and last name",
+                fullName:"Enter your first and last name",
 
                 password: {
                     required:"Password is mandatory.",
@@ -177,29 +177,29 @@
                     equalTo:"Passwords don't match."
                 },
 
-                phone: {
+                phoneNumber: {
                     required:"Phone number is mandatory",
                     minlength:"Phone number must be 10 digits long"
                 },
 
-                student_email:{
+                email:{
                     required:"Email is mandatory",
                     email:"Please provide a valid email ID"
                 },
 
-                marksInSSC:{
+                'marks.sscMarks':{
                     required:"SSC Marks are mandatory",
                     number:"Only digits are allowed",
                     range:"Marks must be between 0 to 100%"
                 },
 
-                marksInHSC:{
+                'marks.hscMarks':{
                     required:"HSC Marks are mandatory",
                     number:"Only digits are allowed",
                     range:"Marks must be between 0 to 100%"
                 },
 
-                marksInCurrentDegree:{
+                'marks.currentDegreeMarks':{
                     required:"Current degree Marks are mandatory",
                     number:"Only digits are allowed",
                     range:"Marks must be between 0 to 100%"

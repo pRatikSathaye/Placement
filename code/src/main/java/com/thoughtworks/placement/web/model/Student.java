@@ -4,13 +4,16 @@ public class Student {
     private String SID;
 
     private String fullName;
-    private String email;
+
     private String phoneNumber;
     private String password;
+    private String email;
     private Marks marks;
 
-    public Student(String SID) {
+
+    public Student setSID(String SID) {
         this.SID = SID;
+        return this;
     }
 
     public String getFullName() {

@@ -5,12 +5,6 @@ public class Marks {
     private double hscMarks;
     private double currentDegreeMarks;
 
-    public Marks(double sscMarks, double hscMarks, double currentDegreeMarks) {
-        this.sscMarks = sscMarks;
-        this.hscMarks = hscMarks;
-        this.currentDegreeMarks = currentDegreeMarks;
-    }
-
     public double getSscMarks() {
         return sscMarks;
     }
@@ -21,5 +15,17 @@ public class Marks {
 
     public double getCurrentDegreeMarks() {
         return currentDegreeMarks;
+    }
+
+    public void setSscMarks(double sscMarks) {
+        this.sscMarks = sscMarks;
+    }
+
+    public void setHscMarks(double hscMarks) {
+        this.hscMarks = hscMarks;
+    }
+
+    public void setCurrentDegreeMarks(double currentDegreeMarks) {
+        this.currentDegreeMarks = currentDegreeMarks;
     }
 }
