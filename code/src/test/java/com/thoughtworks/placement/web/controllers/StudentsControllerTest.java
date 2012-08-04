@@ -51,7 +51,7 @@ public class StudentsControllerTest {
         request.setRequestURI("/student/register");
         request.setMethod("GET");
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
-        assertViewName(responseView, "registration");
+        assertViewName(responseView, "registerStudent");
     }
 
 

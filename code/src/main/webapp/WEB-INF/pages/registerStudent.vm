@@ -1,59 +1,105 @@
-<form class="form-horizontal" id="registerHere" method='post' action=''>
+<form class="form-horizontal" id="studentRegistrationForm" method='post' action=''>
     <fieldset>
 
         <legend>Register Student </legend>
 
+        <br/><p>Enter all student details and press <b>Register</b>.</p><br/>
+
         <div class="control-group">
-            <label class="control-label" for="user_name">Name</label>
+            <label class="control-label" for="student_id">Student ID</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="user_name" name="user_name" rel="popover"
-                       data-content="Enter your first and last name." data-original-title="Full Name">
+                <input type="text" class="input-xlarge" id="student_id" name="student_id" rel="popover"
+                       data-original-title="Student University ID"
+                       data-content="Enter your unique university registration number." >
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="user_email">Email</label>
+            <label class="control-label" for="student_name">Name</label>
 
             <div class="controls">
-                <input type="text" class="input-xlarge" id="user_email" name="user_email" rel="popover"
-                       data-content="What’s your email address?" data-original-title="Email">
+                <input type="text" class="input-xlarge" id="student_name" name="student_name" rel="popover"
+                       data-original-title="Full Name"
+                       data-content="Enter your full name as appears in the University certificates." >
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="pwd">Password</label>
+            <label class="control-label" for="password">Password</label>
 
             <div class="controls">
-                <input type="password" class="input-xlarge" id="pwd" name="pwd" rel="popover"
-                       data-content="6 characters or more! Be tricky" data-original-title="Password">
+                <input type="password" class="input-xlarge" id="password" name="password" rel="popover"
+                       data-original-title="Password"
+                       data-content="Enter a strong password. Must be greater than 6 letters. Don't forget it!" >
             </div>
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="cpwd">Confirm Password</label>
+            <label class="control-label" for="confirmPassword">Confirm Password</label>
 
             <div class="controls">
-                <input type="password" class="input-xlarge" id="cpwd" name="cpwd" rel="popover"
-                       data-content="Re-enter your password for confirmation." data-original-title="Re-Password">
+                <input type="password" class="input-xlarge" id="confirmPassword" name="confirmPassword" rel="popover"
+                       data-original-title="Re-enter Password"
+                       data-content="Enter your password again for confirmation." >
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="phone">Phone</label>
+
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="phone" name="phone" rel="popover"
+                       data-original-title="Phone/Mobile"
+                       data-content="Enter your contact number" >
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="student_email">Email</label>
+
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="student_email" name="student_email" rel="popover"
+                       data-original-title="Email"
+                       data-content="Enter your email Id for placement related communications." >
             </div>
         </div>
 
 
         <div class="control-group">
-            <label class="control-label" for="gender">Gender</label>
+            <label class="control-label" for="marksInSSC">Marks (SSC)</label>
 
             <div class="controls">
-                <select name="gender" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+                <input type="text" class="input-xlarge" id="marksInSSC" name="marksInSSC" rel="popover"
+                       data-original-title="SSC Marks"
+                       data-content="Enter your SSC (10th Standard) marks in percentage" >
             </div>
         </div>
 
         <div class="control-group">
+            <label class="control-label" for="marksInHSC">Marks (HSC)</label>
+
             <div class="controls">
-                <button type="submit" class="btn btn-success" rel="tooltip" title="first tooltip">Register</button>
+                <input type="text" class="input-xlarge" id="marksInHSC" name="marksInHSC" rel="popover"
+                       data-original-title="HSC Marks"
+                       data-content="Enter your HSC (12th Standard) marks in percentage" >
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="marksInCurrentDegree">Marks (Current)</label>
+
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="marksInCurrentDegree" name="marksInCurrentDegree" rel="popover"
+                       data-original-title="Current Degree Marks"
+                       data-content="Enter your average overall marks in percentage (for current degree)" >
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-success btn-large" rel="tooltip" title="Click to Register student details.">Register</button>
             </div>
         </div>
     </fieldset>
@@ -62,42 +108,102 @@
 <script src="resources/js/jquery.validate.min.js"></script>
 
 <script type="text/javascript">
+
     $(document).ready(function () {
+
         $('input').hover(function () {
             $(this).popover('show')
         });
-        $("#registerHere").validate({
+
+        $("#student_id").focus();
+
+        $("#studentRegistrationForm").validate({
             rules:{
-                user_name:"required",
-                user_email:{
-                    required:true,
-                    email:true
-                },
-                pwd:{
+                student_id: "required",
+
+                student_name:"required",
+
+                password: {
                     required:true,
                     minlength:6
                 },
-                cpwd:{
-                    required:true,
-                    equalTo:"#pwd"
+
+                confirmPassword: {
+                    equalTo:"#password"
                 },
-                gender:"required"
+
+                phone: {
+                    required:true,
+                    number:true,
+                    minlength:10
+                },
+
+                student_email:{
+                    required:true,
+                    email:true
+                },
+
+                marksInSSC:{
+                    required:true,
+                    number:true,
+                    range:[0,100]
+                },
+
+                marksInHSC:{
+                    required:true,
+                    number:true,
+                    range:[0,100]
+                },
+
+                marksInCurrentDegree:{
+                    required:true,
+                    number:true,
+                    range:[0,100]
+                }
+
             },
             messages:{
-                user_name:"Enter your first and last name",
-                user_email:{
-                    required:"Enter your email address",
-                    email:"Enter valid email address"
+
+                student_id: "Enter your University provided unique student registration id",
+
+                student_name:"Enter your first and last name",
+
+                password: {
+                    required:"Password is mandatory.",
+                    minlength:"Password should be at least 6 characters long."
                 },
-                pwd:{
-                    required:"Enter your password",
-                    minlength:"Password must be minimum 6 characters"
+
+                confirmPassword: {
+                    equalTo:"Passwords don't match."
                 },
-                cpwd:{
-                    required:"Enter confirm password",
-                    equalTo:"Password and Confirm Password must match"
+
+                phone: {
+                    required:"Phone number is mandatory",
+                    minlength:"Phone number must be 10 digits long"
                 },
-                gender:"Select Gender"
+
+                student_email:{
+                    required:"Email is mandatory",
+                    email:"Please provide a valid email ID"
+                },
+
+                marksInSSC:{
+                    required:"SSC Marks are mandatory",
+                    number:"Only digits are allowed",
+                    range:"Marks must be between 0 to 100%"
+                },
+
+                marksInHSC:{
+                    required:"HSC Marks are mandatory",
+                    number:"Only digits are allowed",
+                    range:"Marks must be between 0 to 100%"
+                },
+
+                marksInCurrentDegree:{
+                    required:"Current degree Marks are mandatory",
+                    number:"Only digits are allowed",
+                    range:"Marks must be between 0 to 100%"
+                }
             },
             errorClass:"help-inline",
             errorElement:"span",

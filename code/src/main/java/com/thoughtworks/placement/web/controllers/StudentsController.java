@@ -18,7 +18,7 @@ public class StudentsController {
 
     @RequestMapping(method = RequestMethod.GET, value = "register")
     public ModelAndView register() {
-        return new ModelAndView("registration");
+        return new ModelAndView("registerStudent");
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "register")
