@@ -3,43 +3,23 @@ package com.thoughtworks.placement.web.model;
 public class Student {
     private String SID;
 
-    private String firstName;
-    private String middleName;
-    private String lastName;
-
+    private String fullName;
     private String email;
-    private String contactNumber;
+    private String phoneNumber;
+    private String password;
+    private Marks marks;
 
     public Student(String SID) {
         this.SID = SID;
     }
 
-    public String getSID() {
-        return SID;
+    public String getFullName() {
+        return fullName;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public Student setFirstName(String firstName) {
-        this.firstName = firstName; return this;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public Student setMiddleName(String middleName) {
-        this.middleName = middleName; return this;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public Student setLastName(String lastName) {
-        this.lastName = lastName; return this;
+    public Student setFullName(String fullName) {
+        this.fullName = fullName;
+        return this;
     }
 
     public String getEmail() {
@@ -47,14 +27,39 @@ public class Student {
     }
 
     public Student setEmail(String email) {
-        this.email = email; return this;
+        this.email = email;
+        return this;
     }
 
-    public String getContactNumber() {
-        return contactNumber;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public Student setContactNumber(String contactNumber) {
-        this.contactNumber = contactNumber; return this;
+    public Student setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Student setPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
+    public Marks getMarks() {
+        return marks;
+    }
+
+    public Student setMarks(Marks marks) {
+        this.marks = marks;
+        return this;
+    }
+
+
+    public String getSID() {
+        return SID;
     }
 }

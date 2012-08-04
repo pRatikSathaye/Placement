@@ -10,7 +10,7 @@
     <tbody>
         #foreach( $student in $studentList )
         <tr>
-            <td>${student.firstName} ${student.middleName} ${student.lastName}</td>
+            <td>${student.fullName} ${student.middleName} ${student.lastName}</td>
             <td>${student.email}</td>
         </tr>
         #end

@@ -31,14 +31,16 @@ public class StudentsController {
         List<Student> list = new ArrayList<Student>();
 
         Student student = new Student("1");
-        student.setFirstName("Shirish").setMiddleName("Babasaheb").setLastName("Padalkar");
-        student.setEmail("shirish4you@gmail.com").setContactNumber("9876543210");
+        student.setFullName("Shirish Padalkar")
+                .setEmail("shirish4you@gmail.com")
+                .setPhoneNumber("9876543210");
 
         list.add(student);
 
         student = new Student("2");
-        student.setFirstName("Gurpreet").setMiddleName("").setLastName("Luthra");
-        student.setEmail("gurpreet@gmail.com").setContactNumber("1234567890");
+        student.setFullName("Gurpreet Luthra")
+                .setEmail("gsluthra@gmail.com")
+                .setPhoneNumber("9376543210");
 
         list.add(student);
 
