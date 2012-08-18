@@ -45,4 +45,11 @@ public class StudentsController {
         modelMap.put("studentList", studentService.getAll());
         return new ModelAndView("students_list_page", modelMap);
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "list/greater/{currentDegreeMarks}")
+    public ModelAndView listWithCriteria(@PathVariable("currentDegreeMarks") double currentDegreeMarks) {
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("studentList", studentService.getAllCurrentMarksGreaterThan(currentDegreeMarks));
+        return new ModelAndView("students_list_page", modelMap);
+    }
 }

@@ -25,4 +25,8 @@ public class StudentService {
     public Iterable<Student> getAll() {
         return repository.findAll();
     }
+
+    public Iterable<Student> getAllCurrentMarksGreaterThan(double marks) {
+        return repository.findByCurrentDegreeMarksGreaterThan(marks);
+    }
 }

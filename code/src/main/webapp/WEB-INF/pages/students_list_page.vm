@@ -5,15 +5,25 @@
 <table class="table table-bordered table-striped">
     <thead>
     <tr>
+        <th>SID</th>
         <th>Name</th>
+        <th>Phone</th>
         <th>Email</th>
+        <th>SSC Marks</th>
+        <th>HSC Marks</th>
+        <th>Current Marks</th>
     </tr>
     </thead>
     <tbody>
         #foreach( $student in $studentList )
         <tr>
+            <td>${student.SID}</td>
             <td>${student.fullName}</td>
+            <td>${student.phoneNumber}</td>
             <td>${student.email}</td>
+            <td>${student.marks.sscMarks}</td>
+            <td>${student.marks.hscMarks}</td>
+            <td>${student.marks.currentDegreeMarks}</td>
         </tr>
         #end
     </tbody>
