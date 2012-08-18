@@ -1,3 +1,5 @@
+<meta name="menuName" content="register"/>
+
 <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/register">
     <fieldset>
 

@@ -1,68 +1,48 @@
 package com.thoughtworks.placement.web.controllers;
 
-
+import com.thoughtworks.placement.web.model.DummyStudent;
 import com.thoughtworks.placement.web.model.Student;
+import com.thoughtworks.placement.web.services.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 @Controller
 @RequestMapping(value = "/student")
 public class StudentsController {
-    Student currentUnsafeStudent = null;
+
+    @Autowired
+    StudentService studentService;
 
     @RequestMapping(method = RequestMethod.GET, value = "register")
     public ModelAndView showRegisterForm() {
-        return new ModelAndView("student_registration_page", "student", new Student());
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("student", new DummyStudent());
+        return new ModelAndView("student_registration_page", modelMap);
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "register")
-    public String registerStudent(@ModelAttribute("student") Student student) {
-        //TODO: Need to store student to mongo!
-        currentUnsafeStudent = student;
-        return "redirect:profile/"+student.getSID();
+    public ModelAndView registerStudent(@ModelAttribute("student") Student student) {
+        studentService.save(student);
+        return new ModelAndView("redirect:profile/"+student.getSID());
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "profile/{SID}")
     public ModelAndView showProfilePage(@PathVariable("SID") String studentID) {
-        //TODO: Need to read profile from Mongo!
         ModelMap modelMap = new ModelMap();
-        modelMap.put("student", currentUnsafeStudent);
+        modelMap.put("student", studentService.find(studentID));
         return new ModelAndView("student_profile_page", modelMap);
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "list")
     public ModelAndView list() {
-        //TODO: Need to read list of all students from Mongo!
         ModelMap modelMap = new ModelMap();
-        modelMap.put("studentList", getHardCodedStudentList());
+        modelMap.put("studentList", studentService.getAll());
         return new ModelAndView("students_list_page", modelMap);
     }
-
-    private List<Student> getHardCodedStudentList() {
-        List<Student> list = new ArrayList<Student>();
-
-        Student student = new Student();
-        student.setSID("1")
-                .setFullName("Shirish Padalkar")
-                .setEmail("shirish4you@gmail.com")
-                .setPhoneNumber("9876543210");
-
-        list.add(student);
-
-        student = new Student();
-        student.setSID("2")
-                .setFullName("Gurpreet Luthra")
-                .setEmail("gsluthra@gmail.com")
-                .setPhoneNumber("9376543210");
-
-        list.add(student);
-        return list;
-    }
-
 }

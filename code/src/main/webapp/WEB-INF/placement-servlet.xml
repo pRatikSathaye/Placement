@@ -4,24 +4,32 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
     <!-- For scanning @Controller and @Component annotations -->
     <context:annotation-config/>
     <mvc:annotation-driven/>
     <context:component-scan base-package="com.thoughtworks.placement.web.*"/>
 
-    <!-- This is required to serve static resources -->
+    <!-- Required to serve static resources -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
-    <mvc:resources mapping="/layout.html" location="/WEB-INF/layout.html"/>
+
+    <!-- MongoDB configuration -->
+    <mongo:mongo id="mongo"/>
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg ref="mongo"/>
+        <constructor-arg value="placement"/>
+    </bean>
+    <mongo:repositories base-package="com.thoughtworks.placement.web.dao"/>
+
 
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
         <property name="resourceLoaderPath" value="/"/>
     </bean>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
-        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".vm"/>
     </bean>

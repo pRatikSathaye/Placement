@@ -1,23 +1,17 @@
 package com.thoughtworks.placement.web.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+public class DummyStudent {
+    private String SID="12345";
 
-@Document
-public class Student {
+    private String fullName="Shirish Padalkar";
 
-    @Id
-    private String SID;
-
-    private String fullName;
-
-    private String phoneNumber;
-    private String password;
-    private String email;
+    private String phoneNumber="9876543210";
+    private String password="shirish";
+    private String email="shirish4you@gmail.com";
     private Marks marks;
 
 
-    public Student setSID(String SID) {
+    public DummyStudent setSID(String SID) {
         this.SID = SID;
         return this;
     }
@@ -26,7 +20,7 @@ public class Student {
         return fullName;
     }
 
-    public Student setFullName(String fullName) {
+    public DummyStudent setFullName(String fullName) {
         this.fullName = fullName;
         return this;
     }
@@ -35,7 +29,7 @@ public class Student {
         return email;
     }
 
-    public Student setEmail(String email) {
+    public DummyStudent setEmail(String email) {
         this.email = email;
         return this;
     }
@@ -44,7 +38,7 @@ public class Student {
         return phoneNumber;
     }
 
-    public Student setPhoneNumber(String phoneNumber) {
+    public DummyStudent setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         return this;
     }
@@ -53,20 +47,23 @@ public class Student {
         return password;
     }
 
-    public Student setPassword(String password) {
+    public DummyStudent setPassword(String password) {
         this.password = password;
         return this;
     }
 
     public Marks getMarks() {
+        Marks marks= new Marks();
+        marks.setSscMarks(76);
+        marks.setHscMarks(80);
+        marks.setCurrentDegreeMarks(96);
         return marks;
     }
 
-    public Student setMarks(Marks marks) {
+    public DummyStudent setMarks(Marks marks) {
         this.marks = marks;
         return this;
     }
-
 
     public String getSID() {
         return SID;

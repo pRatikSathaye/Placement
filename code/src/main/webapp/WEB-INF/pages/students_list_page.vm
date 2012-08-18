@@ -1,3 +1,5 @@
+<meta name="menuName" content="list"/>
+
 <h1>Students list:</h1>
 <br />
 <table class="table table-bordered table-striped">

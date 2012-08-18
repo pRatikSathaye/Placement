@@ -2,8 +2,7 @@
 <head>
     <meta charset="utf-8">
     <!-- This is used to specify base URL for all relative URLs on page -->
-    <!--<base href="${pageContext.request.contextPath}/">-->
-    <base href="/placement/">
+    <base href="${pageContext.request.contextPath}/">
 
     <title>
         <sitemesh:write property='title'/>
@@ -47,6 +46,13 @@
     <script src="resources/js/bootstrap-carousel.js"></script>
     <script src="resources/js/bootstrap-typeahead.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var menu = $("meta[name=menuName]").attr("content");
+            $('#' + menu).addClass("active");
+        });
+    </script>
+
     <sitemesh:write property='head'/>
 </head>
 <body>
@@ -62,9 +68,9 @@
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="student/register">Register Student</a></li>
-                    <li><a href="student/list">List Students</a></li>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li id="register"><a href="student/register">Register Student</a></li>
+                    <li id="list"><a href="student/list">List Students</a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
