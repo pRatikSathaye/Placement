@@ -14,8 +14,7 @@ public class StudentService {
     StudentRepository repository;
 
     public Student save(Student student) {
-        repository.save(student);
-        return student;
+        return repository.save(student);
     }
 
     public Student find(String studentID) {

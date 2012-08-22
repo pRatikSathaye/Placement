@@ -13,6 +13,13 @@
     <mvc:annotation-driven/>
     <context:component-scan base-package="com.thoughtworks.placement.web.*"/>
 
+    <mvc:interceptors>
+        <bean class="com.thoughtworks.placement.web.interceptors.UserAuthenticationInterceptor">
+            <property name="exclude" value="login,logout" />
+            <property name="excludeExtensions" value="js,css,jpg,png"/>
+        </bean>
+    </mvc:interceptors>
+
     <!-- Required to serve static resources -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
 

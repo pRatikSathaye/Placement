@@ -67,7 +67,6 @@ public class Student {
         return this;
     }
 
-
     public String getSID() {
         return SID;
     }

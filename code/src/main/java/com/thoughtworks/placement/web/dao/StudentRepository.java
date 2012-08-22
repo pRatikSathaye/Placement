@@ -10,6 +10,8 @@ import java.util.List;
 
 public interface StudentRepository extends PagingAndSortingRepository<Student, String> {
 
+    Student findBySID(String sid);
+
     List<Student> findByFullName(String fullName);
 
     @Query("{\"marks.currentDegreeMarks\":{$gt:?0}}")

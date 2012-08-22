@@ -56,7 +56,7 @@
     <sitemesh:write property='head'/>
 </head>
 <body>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -68,10 +68,20 @@
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li id="home"><a href="#">Home</a></li>
+                    <li id="home"><a href="index">Home</a></li>
                     <li id="register"><a href="student/register">Register Student</a></li>
                     <li id="list"><a href="student/list">List Students</a></li>
                 </ul>
+                <%
+                    com.thoughtworks.placement.web.model.Student user = (com.thoughtworks.placement.web.model.Student) session.getAttribute("LOGGEDIN_USER");
+                    if (user != null) {
+                %>
+                <form class="navbar-form pull-right" method="POST" action="logout">
+                    <button type="submit" class="btn btn-link">Logout</button>
+                </form>
+                <%
+                    }
+                %>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -80,7 +90,7 @@
 <div class="container">
     <sitemesh:write property='body'/>
     <hr/>
-    <footer>
+    <footer style="text-align:center">
         <p>&copy; ThoughtWorks Inc., 2012</p>
     </footer>
 </div>
