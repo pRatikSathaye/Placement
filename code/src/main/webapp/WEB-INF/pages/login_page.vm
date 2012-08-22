@@ -1,0 +1,40 @@
+<meta name="menuName" content="home"/>
+
+<div class="hero-unit">
+
+    <div class="content">
+        <div class="login-form">
+
+            <form class="form-horizontal" method="POST" action="login">
+                <h2>Login</h2>
+                <hr/>
+                <div class="control-group">
+                    <div class="controls">
+                        <span class="alert-error">
+                            $!errorMessage
+                        </span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">SID</label>
+
+                    <div class="controls">
+                        #springFormInput ('user.username' , 'placeholder="Username"')
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Password</label>
+
+                    <div class="controls">
+                        #springFormPasswordInput ('user.password' , 'placeholder="Password"')
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
