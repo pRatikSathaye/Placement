@@ -1,5 +1,5 @@
-<h1>Profile: ${student.fullName}</h1>
-
+<h3>Profile: ${student.fullName}</h3>
+<hr/>
 <p>
 
     Student ID: ${student.SID} <br/>

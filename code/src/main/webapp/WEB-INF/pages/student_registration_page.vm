@@ -5,7 +5,7 @@
 <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/register">
     <fieldset>
 
-        <h2>Register Student </h2><hr/>
+        <h3>Register Student </h3><hr/>
 
         <p>Enter all student details and press <b>Register</b>.</p><br/>
 

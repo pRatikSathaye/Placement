@@ -6,7 +6,7 @@
         <div class="login-form">
 
             <form class="form-horizontal" method="POST" action="login">
-                <h2>Login to Placement app</h2>
+                <h3>Login to Placement Zone</h3>
                 <hr/>
                 <div class="control-group">
                     <div class="controls">

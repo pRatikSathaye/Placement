@@ -1,7 +1,7 @@
 <meta name="menuName" content="list"/>
 
 <div class="hero-unit">
-    <h2>Students list:</h2>
+    <h3>Students List</h3>
     <hr/>
     <table class="table table-bordered">
         <thead>
