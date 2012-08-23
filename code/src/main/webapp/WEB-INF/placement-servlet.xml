@@ -15,8 +15,8 @@
 
     <mvc:interceptors>
         <bean class="com.thoughtworks.placement.web.interceptors.UserAuthenticationInterceptor">
-            <property name="exclude" value="login,logout" />
-            <property name="excludeExtensions" value="js,css,jpg,png"/>
+            <property name="excludedPaths" value="login,logout,student/register" />
+            <property name="excludedFileExtensions" value="js,css,jpg,png"/>
         </bean>
     </mvc:interceptors>
 

@@ -1,5 +1,6 @@
 package com.thoughtworks.placement.web.interceptors;
 
+import com.thoughtworks.placement.web.controllers.LoginController;
 import com.thoughtworks.placement.web.model.Student;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -12,16 +13,15 @@ import java.util.List;
 @Component
 public class UserAuthenticationInterceptor extends HandlerInterceptorAdapter {
 
-    List<String> exclude;
+    List<String> excludedPaths;
+    List<String> excludedFileExtensions;
 
-    List<String> excludeExtensions;
-
-    public void setExclude(String exclude) {
-        this.exclude = Arrays.asList(exclude.split(","));
+    public void setExcludedPaths(String excludedPaths) {
+        this.excludedPaths = Arrays.asList(excludedPaths.split(","));
     }
 
-    public void setExcludeExtensions(String excludeExtensions) {
-        this.excludeExtensions = Arrays.asList(excludeExtensions.split(","));
+    public void setExcludedFileExtensions(String excludedFileExtensions) {
+        this.excludedFileExtensions = Arrays.asList(excludedFileExtensions.split(","));
     }
 
     @Override
@@ -30,7 +30,7 @@ public class UserAuthenticationInterceptor extends HandlerInterceptorAdapter {
         String uri = request.getRequestURI();
 
         if (shouldBeIntercepted(uri)) {
-            Student userData = (Student) request.getSession().getAttribute("LOGGEDIN_USER");
+            Student userData = (Student) request.getSession().getAttribute(LoginController.LOGGED_IN_USER_KEY);
             if (userData == null) {
                 response.sendRedirect(request.getContextPath()+"/login");
                 return false;
@@ -40,13 +40,13 @@ public class UserAuthenticationInterceptor extends HandlerInterceptorAdapter {
     }
 
     private boolean shouldBeIntercepted(String uri) {
-        for(String extension : excludeExtensions){
-            if (uri.endsWith("."+extension)){
+        for(String extension : excludedFileExtensions){
+            if (uri.endsWith("."+extension.trim())){
                 return false;
             }
         }
-        for (String endpoint : exclude){
-            if (uri.endsWith(endpoint)){
+        for (String path : excludedPaths){
+            if (uri.endsWith(path.trim())){
                 return false;
             }
         }

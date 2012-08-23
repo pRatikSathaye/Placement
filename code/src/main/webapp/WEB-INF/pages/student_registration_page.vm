@@ -1,11 +1,13 @@
 <meta name="menuName" content="register"/>
 
+<div class="hero-unit">
+
 <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/register">
     <fieldset>
 
-        <legend>Register Student </legend>
+        <h2>Register Student </h2><hr/>
 
-        <br/><p>Enter all student details and press <b>Register</b>.</p><br/>
+        <p>Enter all student details and press <b>Register</b>.</p><br/>
 
         <div class="control-group">
             <label class="control-label">Student ID</label>
@@ -106,7 +108,7 @@
         </div>
     </fieldset>
 </form>
-
+</div>
 <script src="resources/js/jquery.validate.min.js"></script>
 
 <script type="text/javascript">

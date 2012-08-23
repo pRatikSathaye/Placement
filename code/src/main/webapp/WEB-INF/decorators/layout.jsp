@@ -1,3 +1,5 @@
+<%@ page import="com.thoughtworks.placement.web.controllers.LoginController" %>
+<%@ page import="com.thoughtworks.placement.web.model.Student" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -73,7 +75,7 @@
                     <li id="list"><a href="student/list">List Students</a></li>
                 </ul>
                 <%
-                    com.thoughtworks.placement.web.model.Student user = (com.thoughtworks.placement.web.model.Student) session.getAttribute("LOGGEDIN_USER");
+                    Student user = (Student) session.getAttribute(LoginController.LOGGED_IN_USER_KEY);
                     if (user != null) {
                 %>
                 <form class="navbar-form pull-right" method="POST" action="logout">
