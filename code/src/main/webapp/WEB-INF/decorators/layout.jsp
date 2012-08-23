@@ -92,7 +92,7 @@
 <div class="container">
     <sitemesh:write property='body'/>
     <hr/>
-    <footer style="text-align:center">
+    <footer style="text-align:left">
         <p>&copy; ThoughtWorks Inc., 2012</p>
     </footer>
 </div>
