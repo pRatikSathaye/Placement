@@ -1,13 +1,91 @@
-<h3>Profile: ${student.fullName}</h3>
-<hr/>
-<p>
+<div class="hero-unit">
+    <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/update">
+        <fieldset>
 
-    Student ID: ${student.SID} <br/>
-    Name: ${student.fullName} <br/>
-    Email: ${student.email} <br/>
-    Phone: ${student.phoneNumber} <br/>
-    Marks: SSC ${student.marks.sscMarks} <br/>
-    Marks: HSC ${student.marks.hscMarks} <br/>
-    Marks: Current ${student.marks.currentDegreeMarks} <br/>
+            <h2>Manage profile</h2><hr/>
 
-</p>
+            <div class="control-group">
+                <label class="control-label">Student ID</label>
+
+                <div class="controls">
+                    #springFormInput ('student.SID' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Name</label>
+
+                <div class="controls">
+                    #springFormInput ('student.fullName' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Password</label>
+
+                <div class="controls">
+                    #springFormPasswordInput ("student.password" , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+##            <div class="control-group">
+##                <label class="control-label">Confirm Password</label>
+##
+##                <div class="controls">
+##                    <input type="password" class="input-xlarge" id="confirmPassword" name="confirmPassword" rel="popover"
+##                           data-original-title="Re-enter Password"
+##                           data-content="Enter your password again for confirmation." >
+##                </div>
+##            </div>
+
+            <div class="control-group">
+                <label class="control-label">Phone</label>
+
+                <div class="controls">
+                    #springFormInput ('student.phoneNumber' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Email</label>
+
+                <div class="controls">
+                    #springFormInput ('student.email' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+
+            <div class="control-group">
+                <label class="control-label">Marks (SSC)</label>
+
+                <div class="controls">
+                    #springFormInput ('student.marks.sscMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Marks (HSC)</label>
+
+                <div class="controls">
+                    #springFormInput ('student.marks.hscMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Marks (Current)</label>
+
+                <div class="controls">
+                    #springFormInput ('student.marks.currentDegreeMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                </div>
+            </div>
+
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-warning btn-large disabled" rel="tooltip" title="Update" disabled="disabled">Update Profile</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>

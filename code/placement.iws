@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iml" afterPath="$PROJECT_DIR$/placement.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.ipr" afterPath="$PROJECT_DIR$/placement.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" />
     </list>
     <ignored path="placement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,10 +67,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome.vm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm">
+      <file leaf-file-name="student_profile_page.vm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="170" selection-end="170" vertical-scroll-proportion="0.08510638">
+            <state line="84" column="114" selection-start="3347" selection-end="3347" vertical-scroll-proportion="-22.384615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page.vm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="86" selection-start="1512" selection-end="1512" vertical-scroll-proportion="-25.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="0" selection-start="3932" selection-end="3932" vertical-scroll-proportion="0.8325123">
               <folding />
             </state>
           </provider>
@@ -91,8 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/layout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
@@ -100,13 +115,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
       </list>
     </option>
   </component>
@@ -186,6 +203,30 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="placement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="placement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -510,44 +551,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="201" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="201" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="199" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="204" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="998" />
@@ -563,9 +580,9 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -573,8 +590,8 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -756,6 +773,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -782,24 +817,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -838,17 +855,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -872,6 +878,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -937,23 +954,23 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46294186" sideWeight="0.4987745" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46126762" sideWeight="0.4987745" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43192488" sideWeight="0.49693626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.6713948" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877451" sideWeight="0.536385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877451" sideWeight="0.5387324" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1052,32 +1069,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="89" selection-start="2408" selection-end="2408" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="186" selection-end="186" vertical-scroll-proportion="0.08888889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.06351183">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="13" selection-start="382" selection-end="399" vertical-scroll-proportion="0.0">
@@ -1115,37 +1106,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="124" selection-end="124" vertical-scroll-proportion="0.13127413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="8" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="100" selection-start="3483" selection-end="3483" vertical-scroll-proportion="0.4092664">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="140" selection-end="140" vertical-scroll-proportion="0.10638298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="61" selection-end="61" vertical-scroll-proportion="0.043256998">
           <folding />
         </state>
       </provider>
@@ -1160,9 +1123,65 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="744" selection-end="744" vertical-scroll-proportion="0.123636365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="170" selection-end="170" vertical-scroll-proportion="0.08510638">
+        <state line="2" column="16" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0655106">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4806" column="13" selection-start="93309" selection-end="93315" vertical-scroll-proportion="-0.743083">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="101" selection-end="101" vertical-scroll-proportion="0.08510638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="29" selection-start="1296" selection-end="1300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="39" selection-start="652" selection-end="652" vertical-scroll-proportion="0.73536897">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="114" selection-start="3347" selection-end="3347" vertical-scroll-proportion="-22.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="86" selection-start="1512" selection-end="1512" vertical-scroll-proportion="-25.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="3932" selection-end="3932" vertical-scroll-proportion="0.8325123">
           <folding />
         </state>
       </provider>

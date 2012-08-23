@@ -69,17 +69,21 @@
             <a class="brand" href="#">Placement</a>
 
             <div class="nav-collapse">
-                <ul class="nav">
-                    <li id="home"><a href="index">Home</a></li>
-                    <li id="register"><a href="student/register">Register Student</a></li>
-                    <li id="list"><a href="student/list">List Students</a></li>
-                </ul>
+
                 <%
                     Student user = (Student) session.getAttribute(LoginController.LOGGED_IN_USER_KEY);
                     if (user != null) {
                 %>
+                <ul class="nav">
+                    <li id="home"><a href="index">Home</a></li>
+                    <%--<li id="register"><a href="student/register">Register Student</a></li>--%>
+                    <li id="list"><a href="student/list">List Students</a></li>
+                </ul>
                 <form class="navbar-form pull-right" method="POST" action="logout">
                     <button type="submit" class="btn btn-link">Logout</button>
+                </form>
+                <form class="navbar-form pull-right" method="GET" action="student/profile/<%=user.getSID()%>">
+                    <button type="submit" class="btn btn-link">Profile</button>
                 </form>
                 <%
                     }
@@ -91,9 +95,10 @@
 </div>
 <div class="container">
     <sitemesh:write property='body'/>
-    <hr/>
     <footer>
-        <p class="modal-footer"> <small> &copy; ThoughtWorks Inc., 2012 </small> </p>
+        <p class="modal-footer">
+            <small> &copy; ThoughtWorks Inc., 2012</small>
+        </p>
     </footer>
 </div>
 </body>
