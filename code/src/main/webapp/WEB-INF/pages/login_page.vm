@@ -37,7 +37,7 @@
 
                 <div class="control-group">
                     <div class="controls">
-                        <p>New user? <a href="student/register">Register here.</a></p>
+                        <p>New user? <a href="register">Register here.</a></p>
                     </div>
                 </div>
             </form>

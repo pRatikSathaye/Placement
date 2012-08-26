@@ -2,7 +2,7 @@
 
 <div class="hero-unit">
 
-<form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/register">
+<form class="form-horizontal" id="studentRegistrationForm" method="POST" action="register">
     <fieldset>
 
         <h3>Register Student </h3><hr/>

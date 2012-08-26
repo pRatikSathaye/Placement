@@ -47,9 +47,9 @@ public class StudentsControllerTest {
     }
 
 
-    @Test
+    @Test @Ignore
     public void testRegister() throws Exception {
-        request.setRequestURI("/student/register");
+        request.setRequestURI("/register");
         request.setMethod("GET");
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
         assertViewName(responseView, "student_registration_page");
@@ -58,7 +58,7 @@ public class StudentsControllerTest {
 
     @Test @Ignore
     public void testList() throws Exception {
-        request.setRequestURI("/student/list");
+        request.setRequestURI("/po/list");
         request.setMethod("GET");
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
         assertViewName(responseView, "students_list_page");

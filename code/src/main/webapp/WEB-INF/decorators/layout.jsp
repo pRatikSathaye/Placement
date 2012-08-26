@@ -1,5 +1,6 @@
 <%@ page import="com.thoughtworks.placement.web.controllers.LoginController" %>
 <%@ page import="com.thoughtworks.placement.web.model.Student" %>
+<%@ page import="com.thoughtworks.placement.web.model.Role" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -76,8 +77,9 @@
                 %>
                 <ul class="nav">
                     <li id="home"><a href="index">Home</a></li>
-                    <%--<li id="register"><a href="student/register">Register Student</a></li>--%>
-                    <li id="list"><a href="student/list">List Students</a></li>
+                    <% if (user.getRole() == Role.PLACEMENT_OFFICER){%>
+                    <li id="list"><a href="po/listStudents">List Students</a></li>
+                    <%}%>
                 </ul>
                 <form class="navbar-form pull-right" method="POST" action="logout">
                     <button type="submit" class="btn btn-link">Logout</button>

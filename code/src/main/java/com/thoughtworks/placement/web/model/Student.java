@@ -16,6 +16,15 @@ public class Student {
     private String email;
     private Marks marks;
 
+    private Role role = Role.STUDENT;
+
+    public Student(){
+        this.role = Role.STUDENT;
+    }
+
+    public String getSID() {
+        return SID;
+    }
 
     public Student setSID(String SID) {
         this.SID = SID;
@@ -67,7 +76,12 @@ public class Student {
         return this;
     }
 
-    public String getSID() {
-        return SID;
+    public Role getRole() {
+        return role;
+    }
+
+    public Student setRole(Role role) {
+        this.role = role;
+        return this;
     }
 }

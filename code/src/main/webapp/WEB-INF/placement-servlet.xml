@@ -15,9 +15,17 @@
 
     <mvc:interceptors>
         <bean class="com.thoughtworks.placement.web.interceptors.UserAuthenticationInterceptor">
-            <property name="excludedPaths" value="login,logout,student/register" />
+            <property name="excludedPaths" value="login,logout,register" />
             <property name="excludedFileExtensions" value="js,css,jpg,png"/>
         </bean>
+        <mvc:interceptor>
+            <mvc:mapping path="/student/*"/>
+            <bean class="com.thoughtworks.placement.web.interceptors.StudentAuthorizationInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/po/*"/>
+            <bean class="com.thoughtworks.placement.web.interceptors.PlacementOfficerAuthorizationInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 
     <!-- Required to serve static resources -->

@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping(value = "/")
 public class LoginController {
 
     @Autowired
@@ -28,7 +29,7 @@ public class LoginController {
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "login")
-    public ModelAndView doLogin(@ModelAttribute("user") User user,  HttpServletRequest request) {
+    public ModelAndView doLogin(@ModelAttribute("user") User user, HttpServletRequest request) {
         Student loggedInUser = loginService.doLogin(user);
 
         if (loggedInUser!=null){
