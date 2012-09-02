@@ -1,5 +1,6 @@
 package com.thoughtworks.placement.web.dao;
 
+import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,6 +17,8 @@ public interface StudentRepository extends PagingAndSortingRepository<Student, S
 
     @Query("{\"marks.currentDegreeMarks\":{$gt:?0}}")
     List<Student> findByCurrentDegreeMarksGreaterThan(double marks);
+
+    List<Student> findByRole(Role role);
 
     Page<Student> findByFullName(String fullName, Pageable pageable);
 }

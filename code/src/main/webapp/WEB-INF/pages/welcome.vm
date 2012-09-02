@@ -1,7 +1,13 @@
-<meta name="menuName" content="home"/>
+<head>
+    <title>Home - Placement Zone</title>
+    <meta name="menuName" content="home"/>
+</head>
+<body>
 
 <div class="hero-unit">
     <h3>Placement Zone</h3>
     <hr/>
-    Welcome to Placement Zone portal for managing college placement requirements. Ensure your profile details are up-to-date.
+    Welcome to Placement Zone portal for managing college placement requirements. Ensure your profile details are
+    up-to-date.
 </div>
+</body>

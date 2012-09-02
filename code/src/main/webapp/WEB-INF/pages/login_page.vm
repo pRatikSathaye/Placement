@@ -1,5 +1,8 @@
-<meta name="menuName" content="home"/>
-
+<head>
+    <title>Login</title>
+    <meta name="menuName" content="home"/>
+</head>
+<body>
 <div class="hero-unit">
 
     <div class="content">
@@ -46,3 +49,4 @@
         </div>
     </div>
 </div>
+</body>

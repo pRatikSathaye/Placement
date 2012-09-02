@@ -1,5 +1,6 @@
-<meta name="menuName" content="list"/>
 <head>
+    <title>List Students</title>
+    <meta name="menuName" content="list"/>
     <script src="resources/js/stupidtable.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {

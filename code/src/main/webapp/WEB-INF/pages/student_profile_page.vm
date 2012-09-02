@@ -1,14 +1,26 @@
+<head>
+    <title>Manage Profile</title>
+</head>
+<body>
 <div class="hero-unit">
-    <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/update">
+    <form class="form-horizontal" id="studentRegistrationForm" method="POST" action="student/profile/update">
         <fieldset>
 
             <h2>Manage profile</h2><hr/>
 
             <div class="control-group">
+                <div class="controls">
+                        <span class="alert-info">
+                            $!message
+                        </span>
+                </div>
+            </div>
+
+            <div class="control-group">
                 <label class="control-label">Student ID</label>
 
                 <div class="controls">
-                    #springFormInput ('student.SID' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.SID' , 'class="input-xlarge uneditable-input" readonly="readonly"')
                 </div>
             </div>
 
@@ -16,18 +28,18 @@
                 <label class="control-label">Name</label>
 
                 <div class="controls">
-                    #springFormInput ('student.fullName' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.fullName' , 'class="input-xlarge"')
                 </div>
             </div>
 
-            <div class="control-group">
-                <label class="control-label">Password</label>
-
-                <div class="controls">
-                    #springFormPasswordInput ("student.password" , 'class="input-xlarge uneditable-input" disabled="disabled"')
-                </div>
-            </div>
-
+##            <div class="control-group">
+##                <label class="control-label">Password</label>
+##
+##                <div class="controls">
+##                    #springFormPasswordInput ("student.password" , 'class="input-xlarge uneditable-input" readonly="readonly"')
+##                </div>
+##            </div>
+##
 ##            <div class="control-group">
 ##                <label class="control-label">Confirm Password</label>
 ##
@@ -42,7 +54,7 @@
                 <label class="control-label">Phone</label>
 
                 <div class="controls">
-                    #springFormInput ('student.phoneNumber' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.phoneNumber' , 'class="input-xlarge"')
                 </div>
             </div>
 
@@ -50,7 +62,7 @@
                 <label class="control-label">Email</label>
 
                 <div class="controls">
-                    #springFormInput ('student.email' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.email' , 'class="input-xlarge"')
                 </div>
             </div>
 
@@ -59,7 +71,7 @@
                 <label class="control-label">Marks (SSC)</label>
 
                 <div class="controls">
-                    #springFormInput ('student.marks.sscMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.marks.sscMarks' , 'class="input-xlarge"')
                 </div>
             </div>
 
@@ -67,7 +79,7 @@
                 <label class="control-label">Marks (HSC)</label>
 
                 <div class="controls">
-                    #springFormInput ('student.marks.hscMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.marks.hscMarks' , 'class="input-xlarge"')
                 </div>
             </div>
 
@@ -75,17 +87,18 @@
                 <label class="control-label">Marks (Current)</label>
 
                 <div class="controls">
-                    #springFormInput ('student.marks.currentDegreeMarks' , 'class="input-xlarge uneditable-input" disabled="disabled"')
+                    #springFormInput ('student.marks.currentDegreeMarks' , 'class="input-xlarge"')
                 </div>
             </div>
 
 
             <div class="control-group">
                 <div class="controls">
-                    <button type="submit" class="btn btn-warning btn-large disabled" rel="tooltip" title="Update" disabled="disabled">Update Profile</button>
+                    <button type="submit" class="btn btn-warning btn-large" rel="tooltip" title="Update">Update Profile</button>
                 </div>
             </div>
         </fieldset>
     </form>
 
 </div>
+</body>

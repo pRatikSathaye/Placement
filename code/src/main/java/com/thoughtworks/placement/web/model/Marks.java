@@ -17,15 +17,18 @@ public class Marks {
         return currentDegreeMarks;
     }
 
-    public void setSscMarks(double sscMarks) {
+    public Marks setSscMarks(double sscMarks) {
         this.sscMarks = sscMarks;
+        return this;
     }
 
-    public void setHscMarks(double hscMarks) {
+    public Marks setHscMarks(double hscMarks) {
         this.hscMarks = hscMarks;
+        return this;
     }
 
-    public void setCurrentDegreeMarks(double currentDegreeMarks) {
+    public Marks setCurrentDegreeMarks(double currentDegreeMarks) {
         this.currentDegreeMarks = currentDegreeMarks;
+        return this;
     }
 }

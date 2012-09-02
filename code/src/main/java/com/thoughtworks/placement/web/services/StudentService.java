@@ -1,6 +1,7 @@
 package com.thoughtworks.placement.web.services;
 
 import com.thoughtworks.placement.web.dao.StudentRepository;
+import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +23,7 @@ public class StudentService {
     }
 
     public Iterable<Student> getAll() {
-        return repository.findAll();
+        return repository.findByRole(Role.STUDENT);
     }
 
     public Iterable<Student> getAllCurrentMarksGreaterThan(double marks) {

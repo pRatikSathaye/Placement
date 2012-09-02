@@ -1,4 +1,8 @@
-<meta name="menuName" content="register"/>
+<head>
+    <title>Register</title>
+    <meta name="menuName" content="register"/>
+</head>
+<body>
 
 <div class="hero-unit">
 
@@ -221,3 +225,4 @@
         });
     });
 </script>
+</body>
