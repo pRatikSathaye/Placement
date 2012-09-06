@@ -1,8 +1,8 @@
 package com.thoughtworks.placement.web.controllers;
 
+import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,6 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockHttpSession;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,26 +20,22 @@ import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAda
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 import static org.springframework.test.web.ModelAndViewAssert.assertModelAttributeAvailable;
 import static org.springframework.test.web.ModelAndViewAssert.assertViewName;
 
-
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet.xml"})
-public class StudentsControllerTest {
+public class PlacementOfficerControllerTest {
 
     @Autowired
     private ApplicationContext applicationContext;
     @Autowired
-    private StudentsController controller;
+    private PlacementOfficerController controller;
 
     private MockHttpServletRequest request;
     private MockHttpServletResponse response;
     private HandlerAdapter handlerAdapter;
     private MockHttpSession session;
-
 
     @Before
     public void setUp() {
@@ -48,35 +43,34 @@ public class StudentsControllerTest {
         request.setAttribute(HandlerMapping.INTROSPECT_TYPE_LEVEL_MAPPING, true);
 
         session = new MockHttpSession();
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish"));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish").setRole(Role.PLACEMENT_OFFICER));
         request.setSession(session);
 
         response = new MockHttpServletResponse();
         handlerAdapter = new AnnotationMethodHandlerAdapter();
     }
 
-
     @Test
-    public void testViewProfile() throws Exception {
-        request.setRequestURI("/student/profile/shirish");
+    public void testList() throws Exception {
+        request.setRequestURI("/po/listStudents");
         request.setMethod("GET");
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
-        assertViewName(responseView, "student_profile_page");
-        assertModelAttributeAvailable(responseView, "student");
-        assertModelAttributeAvailable(responseView, "message");
+        assertViewName(responseView, "students_list_page");
+        assertModelAttributeAvailable(responseView, "studentList");
+        List<Student> studentList = (List<Student>) responseView.getModel().get("studentList");
+        assertTrue("There are no students in the database to test list student functionality.", studentList.size()>0);
     }
 
     @Test
-    public void testViewProfileForOtherUser() throws Exception {
-        request.setRequestURI("/student/profile/1");
+    public void testListWithCriteria() throws Exception {
+        request.setRequestURI("/po/listStudents/greater/60");
         request.setMethod("GET");
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
-        assertViewName(responseView, "redirect:/");
-    }
-
-
-    @Test @Ignore
-    public void testUpdateProfile() throws Exception {
-        fail("Not implemented");
+        assertViewName(responseView, "students_list_page");
+        assertModelAttributeAvailable(responseView, "studentList");
+        List<Student> studentList = (List<Student>) responseView.getModel().get("studentList");
+        for (Student student : studentList){
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getCurrentDegreeMarks() >= 60);
+        }
     }
 }

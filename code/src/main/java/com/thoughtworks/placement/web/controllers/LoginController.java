@@ -32,20 +32,20 @@ public class LoginController {
     public ModelAndView doLogin(@ModelAttribute("user") User user, HttpServletRequest request) {
         Student loggedInUser = loginService.doLogin(user);
 
-        if (loggedInUser!=null){
-            request.getSession().setAttribute(LOGGED_IN_USER_KEY, loggedInUser);
-            return new ModelAndView("redirect:/");
+        if (loggedInUser==null){
+            ModelMap modelMap = new ModelMap();
+            modelMap.put("user", user);
+            modelMap.put("errorMessage", "Invalid username or password");
+
+            return new ModelAndView("login_page", modelMap);
         }
 
-        ModelMap modelMap = new ModelMap();
-        modelMap.put("user", user);
-        modelMap.put("errorMessage", "Invalid username or password");
-
-        return new ModelAndView("login_page", modelMap);
+        request.getSession().setAttribute(LOGGED_IN_USER_KEY, loggedInUser);
+        return new ModelAndView("redirect:/");
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "logout")
-    public ModelAndView doLogin(HttpServletRequest request) {
+    public ModelAndView logout(HttpServletRequest request) {
         request.getSession().removeAttribute(LOGGED_IN_USER_KEY);
         request.getSession().invalidate();
         return new ModelAndView("redirect:/");
