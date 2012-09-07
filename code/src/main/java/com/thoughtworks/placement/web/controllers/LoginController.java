@@ -30,7 +30,7 @@ public class LoginController {
 
     @RequestMapping(method = RequestMethod.POST, value = "login")
     public ModelAndView doLogin(@ModelAttribute("user") User user, HttpServletRequest request) {
-        Student loggedInUser = loginService.doLogin(user);
+        Student loggedInUser = loginService.checkIfValidUser(user);
 
         if (loggedInUser==null){
             ModelMap modelMap = new ModelMap();

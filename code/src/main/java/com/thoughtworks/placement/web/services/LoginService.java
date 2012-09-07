@@ -12,11 +12,17 @@ public class LoginService {
     @Autowired
     StudentRepository repository;
 
-    public Student doLogin(User user){
+    public Student checkIfValidUser(User user){
+        if (user == null){
+            return null;
+        }
+
         Student student = repository.findOne(user.getUsername());
+
         if (student!=null && student.getPassword().equals(user.getPassword().trim())){
             return student;
         }
+
         return null;
     }
 }

@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/IndexControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/RegistrationControllerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" />
     </list>
     <ignored path="placement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,19 +36,6 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptor.java" line="17" class="com.thoughtworks.placement.web.interceptors.StudentAuthorizationInterceptor" package="com.thoughtworks.placement.web.interceptors">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" line="32" class="com.thoughtworks.placement.web.controllers.LoginController" package="com.thoughtworks.placement.web.controllers">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -100,7 +89,28 @@
     <favorites_list name="placement" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="StudentService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="58" selection-start="755" selection-end="784" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentServiceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="17" selection-start="1642" selection-end="1642" vertical-scroll-proportion="1.6474227">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -114,13 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Marks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm" />
@@ -130,6 +133,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/RegistrationControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
       </list>
     </option>
   </component>
@@ -209,6 +219,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,51 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,72 +277,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -389,16 +299,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="201" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="199" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="199" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="204" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="998" />
@@ -414,9 +324,9 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -424,11 +334,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.thoughtworks.placement.web.services" />
+      <recent name="com.thoughtworks.placement.web.interceptors" />
       <recent name="com.thoughtworks.placement.web.controllers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -449,20 +361,20 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationControllerTest.testShowRegisterForm">
-    <configuration default="false" name="PlacementOfficerControllerTest.testList" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.StudentServiceTest">
+    <configuration default="false" name="LoginServiceTest.shouldReturnNullIfInvalidPassword" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="placement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.PlacementOfficerControllerTest" />
-      <option name="METHOD_NAME" value="testList" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.LoginServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnNullIfInvalidPassword" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -478,19 +390,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="PlacementOfficerControllerTest.testListWithCriteria" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="LoginServiceTest.shouldReturnNullIfNullUserIsPassed" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="placement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.PlacementOfficerControllerTest" />
-      <option name="METHOD_NAME" value="testListWithCriteria" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.LoginServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnNullIfNullUserIsPassed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -506,20 +418,20 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="LoginControllerTest.testDoLogin" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="placement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.LoginControllerTest" />
-      <option name="METHOD_NAME" value="testDoLogin" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.StudentServiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -530,29 +442,23 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="LoginControllerTest.testDoLoginInvalidUserNameOrPassword" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="StudentServiceTest.testGetAllStudents" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="placement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.LoginControllerTest" />
-      <option name="METHOD_NAME" value="testDoLoginInvalidUserNameOrPassword" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.StudentServiceTest" />
+      <option name="METHOD_NAME" value="testGetAllStudents" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -568,19 +474,19 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="RegistrationControllerTest.testShowRegisterForm" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="StudentServiceTest.testGetAllCurrentMarksGreaterThan" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="placement" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.RegistrationControllerTest" />
-      <option name="METHOD_NAME" value="testShowRegisterForm" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.StudentServiceTest" />
+      <option name="METHOD_NAME" value="testGetAllCurrentMarksGreaterThan" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -645,24 +551,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -689,6 +577,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -727,6 +633,17 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -753,17 +670,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
       <deployment />
       <server-settings />
@@ -777,11 +683,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PlacementOfficerControllerTest.testList" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PlacementOfficerControllerTest.testListWithCriteria" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginControllerTest.testDoLogin" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginControllerTest.testDoLoginInvalidUserNameOrPassword" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RegistrationControllerTest.testShowRegisterForm" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnNullIfInvalidPassword" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnNullIfNullUserIsPassed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StudentServiceTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StudentServiceTest.testGetAllStudents" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StudentServiceTest.testGetAllCurrentMarksGreaterThan" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -846,13 +752,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="976" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.6725146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49590644" sideWeight="0.4987745" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -866,10 +771,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965687" sideWeight="0.6725146" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877451" sideWeight="0.5988304" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4011696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24877451" sideWeight="0.5988304" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4011696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -969,106 +875,119 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/welcome.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="313" selection-end="313" vertical-scroll-proportion="0.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="60" selection-end="60" vertical-scroll-proportion="0.020531401" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="511" selection-end="511" vertical-scroll-proportion="0.34124088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.11751152" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/IndexControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.50364965" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="219" selection-end="219" vertical-scroll-proportion="0.16425121" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="62" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.36567163">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="432" selection-end="432" vertical-scroll-proportion="0.310219">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="53" selection-start="1483" selection-end="1511" vertical-scroll-proportion="0.5894161">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="64" selection-start="1649" selection-end="1656" vertical-scroll-proportion="-0.02189781">
+        <state line="36" column="64" selection-start="1649" selection-end="1656" vertical-scroll-proportion="0.49275362">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="31" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.81386864">
+        <state line="11" column="17" selection-start="413" selection-end="413" vertical-scroll-proportion="0.082125604">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="78" selection-start="986" selection-end="1007" vertical-scroll-proportion="0.55839413" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="34" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.14020619">
+        <state line="17" column="0" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="10" selection-start="2978" selection-end="2978" vertical-scroll-proportion="1.9628866">
+        <state line="19" column="0" selection-start="783" selection-end="783" vertical-scroll-proportion="0.22666667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/RegistrationControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="29" selection-start="2357" selection-end="2357" vertical-scroll-proportion="0.6845361">
+        <state line="53" column="0" selection-start="792" selection-end="2222" vertical-scroll-proportion="0.9265659">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="26" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.81349695">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="1035" selection-end="1060" vertical-scroll-proportion="0.52577317">
+        <state line="33" column="28" selection-start="1128" selection-end="1137" vertical-scroll-proportion="0.28140098">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="521" selection-end="521" vertical-scroll-proportion="0.1437198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/IndexControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="39" selection-start="994" selection-end="1110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1142" selection-end="1260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="752" selection-end="1255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="13" selection-start="1337" selection-end="1337" vertical-scroll-proportion="-0.7525773">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="9" selection-start="3103" selection-end="3367" vertical-scroll-proportion="0.87628865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="58" selection-start="755" selection-end="784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="17" selection-start="1642" selection-end="1642" vertical-scroll-proportion="1.6474227">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
