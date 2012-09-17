@@ -5,6 +5,20 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#studentsList").stupidtable();
+
+            $('#selectAll').click(function (e) {
+                var table = $(e.target).closest('table');
+                $('td input:checkbox', table).attr('checked', this.checked);
+            });
+
+            $('#submitStudent').click(function (e) {
+                e.preventDefault(); //stop the default form action
+                var students = [];
+                $('td input:checked').each(function () {
+                    students.push($(this).attr("value"));
+                });
+                alert(students);
+            });
         });
     </script>
 </head>
@@ -15,6 +29,7 @@
     <table id="studentsList" class="table table-bordered">
         <thead>
         <tr>
+            <td><input type="checkbox" id="selectAll" name="selectAll"/></td>
             <th class="type-string">SID</th>
             <th class="type-string">Name</th>
             <th>Phone</th>
@@ -27,6 +42,7 @@
         <tbody>
             #foreach( $student in $studentList )
             <tr>
+                <td><input type="checkbox" id="select_${student.SID}" name="select_${student.SID}" value="${student.SID}"/></td>
                 <td>${student.SID}</td>
                 <td>${student.fullName}</td>
                 <td>${student.phoneNumber}</td>
@@ -38,4 +54,7 @@
             #end
         </tbody>
     </table>
+    <div style="float: right;">
+        <input type="button" class="btn btn-success btn-large" value="Send Notifications" id="submitStudent"/>
+    </div>
 </div>

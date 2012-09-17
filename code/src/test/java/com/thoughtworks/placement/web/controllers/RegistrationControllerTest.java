@@ -21,7 +21,7 @@ import static org.springframework.test.web.ModelAndViewAssert.assertModelAttribu
 import static org.springframework.test.web.ModelAndViewAssert.assertViewName;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet.xml"})
+@ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet-test.xml"})
 public class RegistrationControllerTest {
 
     @Autowired

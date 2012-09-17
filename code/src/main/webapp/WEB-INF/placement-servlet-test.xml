@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+    <!-- For scanning @Controller and @Component annotations -->
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="com.thoughtworks.placement.web.*">
+        <context:include-filter type="annotation" expression="com.thoughtworks.placement.annotations.StubRepository"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+
+    <mvc:interceptors>
+        <bean class="com.thoughtworks.placement.web.interceptors.UserAuthenticationInterceptor">
+            <property name="excludedPaths" value="login,logout,register" />
+            <property name="excludedFileExtensions" value="js,css,jpg,png"/>
+        </bean>
+        <mvc:interceptor>
+            <mvc:mapping path="/student/*"/>
+            <bean class="com.thoughtworks.placement.web.interceptors.StudentAuthorizationInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/po/*"/>
+            <bean class="com.thoughtworks.placement.web.interceptors.PlacementOfficerAuthorizationInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <bean name="repository" class="com.thoughtworks.placement.web.dao.StudentRepositoryStub"/>
+
+    <!-- Required to serve static resources -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".vm"/>
+    </bean>
+
+</beans>

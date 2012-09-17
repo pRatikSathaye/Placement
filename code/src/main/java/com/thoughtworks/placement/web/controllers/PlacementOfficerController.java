@@ -1,5 +1,6 @@
 package com.thoughtworks.placement.web.controllers;
 
+import com.thoughtworks.placement.web.model.Event;
 import com.thoughtworks.placement.web.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,5 +29,12 @@ public class PlacementOfficerController {
         ModelMap modelMap = new ModelMap();
         modelMap.put("studentList", studentService.getAllCurrentMarksGreaterThan(currentDegreeMarks));
         return new ModelAndView("students_list_page", modelMap);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "createEvent")
+    public ModelAndView eventPage() {
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("event", new Event());
+        return new ModelAndView("event_creation_page", modelMap);
     }
 }

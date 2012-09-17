@@ -12,6 +12,10 @@ public class LoginService {
     @Autowired
     StudentRepository repository;
 
+    public void setRepository(StudentRepository repository) {
+        this.repository = repository;
+    }
+
     public Student checkIfValidUser(User user){
         if (user == null){
             return null;

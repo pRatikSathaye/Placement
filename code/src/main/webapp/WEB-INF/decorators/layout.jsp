@@ -79,6 +79,7 @@
                     <li id="home"><a href="index">Home</a></li>
                     <% if (user.getRole() == Role.PLACEMENT_OFFICER){%>
                     <li id="list"><a href="po/listStudents">List Students</a></li>
+                    <li id="event"><a href="po/createEvent">Create Event</a></li>
                     <%}%>
                 </ul>
                 <form class="navbar-form pull-right" method="POST" action="logout">

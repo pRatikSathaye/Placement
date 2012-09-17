@@ -14,7 +14,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet.xml"})
+@ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet-test.xml"})
 public class StudentServiceTest {
 
     @Autowired

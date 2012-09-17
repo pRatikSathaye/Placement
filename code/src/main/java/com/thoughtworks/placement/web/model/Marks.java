@@ -5,6 +5,15 @@ public class Marks {
     private double hscMarks;
     private double currentDegreeMarks;
 
+    public Marks(){
+    }
+
+    public Marks(double sscMarks, double hscMarks, double currentDegreeMarks) {
+        this.sscMarks = sscMarks;
+        this.hscMarks = hscMarks;
+        this.currentDegreeMarks = currentDegreeMarks;
+    }
+
     public double getSscMarks() {
         return sscMarks;
     }

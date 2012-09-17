@@ -22,6 +22,16 @@ public class Student {
         this.role = Role.STUDENT;
     }
 
+    public Student(String SID, String fullName, String phoneNumber, String password, String email, Marks marks, Role role) {
+        this.SID = SID;
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.email = email;
+        this.marks = marks;
+        this.role = role;
+    }
+
     public String getSID() {
         return SID;
     }
