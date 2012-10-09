@@ -57,6 +57,8 @@
                 <version>2.0-SNAPSHOT</version>
                 <configuration>
                     <server>Tomcat7</server>
+                    <username>admin</username>
+                    <password>admin</password>
                     <update>true</update>
                 </configuration>
             </plugin>

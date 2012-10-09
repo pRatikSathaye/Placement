@@ -77,6 +77,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
+  <component name="GradleSettings">
+    <option name="gradleHome" value="$USER_HOME$/sdk/gradle-1.1" />
+  </component>
   <component name="IdProvider" IDEtalkID="6ADC1B3627AA4F9C4F35DFC29D1541D5" />
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.6" />
