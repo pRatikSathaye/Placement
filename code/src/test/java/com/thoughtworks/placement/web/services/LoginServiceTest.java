@@ -1,5 +1,6 @@
 package com.thoughtworks.placement.web.services;
 
+import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import com.thoughtworks.placement.web.model.User;
 import org.junit.Test;
@@ -47,6 +48,16 @@ public class LoginServiceTest {
 
         Student student = service.checkIfValidUser(user);
         assertNull(student);
+    }
+
+    @Test
+    public void shouldReturnAdminUser() throws Exception {
+        User user = new User();
+        user.setUsername("admin"); user.setPassword("password");
+
+        Student student = service.checkIfValidUser(user);
+        assertNotNull(student);
+        assertEquals(Role.PLACEMENT_OFFICER,student.getRole());
     }
 
     @Test
