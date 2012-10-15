@@ -4,6 +4,7 @@ import com.thoughtworks.placement.web.dao.StudentRepository;
 import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import com.thoughtworks.placement.web.model.User;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ public class LoginService {
 
     @Autowired
     StudentRepository repository;
-
+    private static Logger LOGGER = Logger.getLogger(LoginService.class);
     public void setRepository(StudentRepository repository) {
         this.repository = repository;
     }
@@ -45,10 +46,9 @@ public class LoginService {
             if ((properties.getProperty("username").equals(user.getUsername())) && (properties.getProperty("password").equals(user.getPassword()))) {
                 return new Student("1", "Admin", "", "password", "", null, Role.PLACEMENT_OFFICER);
             }
-        } catch (IOException e) {
-
-
+        } catch (Exception e) {
+            LOGGER.info("Could not find credential.properties: " + e);
         }
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }

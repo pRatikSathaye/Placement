@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/thoughtworks/placement/web/services/credentials.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iml" afterPath="$PROJECT_DIR$/placement.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.ipr" afterPath="$PROJECT_DIR$/placement.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
     </list>
     <ignored path="placement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,19 +34,6 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" line="58" class="com.thoughtworks.placement.web.services.LoginServiceTest" package="com.thoughtworks.placement.web.services">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" line="43" class="com.thoughtworks.placement.web.services.LoginService" package="com.thoughtworks.placement.web.services">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,82 +87,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentRepositoryStub.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="26" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Role.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlacementOfficerAuthorizationInterceptor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="89" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginService.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="508" selection-end="508" vertical-scroll-proportion="0.32692307">
+            <state line="17" column="22" selection-start="540" selection-end="540" vertical-scroll-proportion="0.3105023">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="25" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="credentials.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/thoughtworks/placement/web/services/credentials.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+            <state line="9" column="29" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/annotations/StubRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Marks.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet-test.xml" />
@@ -207,9 +130,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/thoughtworks/placement/services/credentials.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -319,6 +244,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,6 +325,28 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="placement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -401,24 +358,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="placement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -494,7 +433,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginServiceTest.shouldReturnNullIfInvalidPassword">
+  <component name="RunManager" selected="Tomcat Server.Tomcat7">
     <configuration default="false" name="LoginControllerTest.testDoLogin" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -989,10 +928,10 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.LoginControllerTest.testDoLogin" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LoginControllerTest.testDoLoginInvalidUserNameOrPassword" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnAdminUser" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnNullIfInvalidPassword" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnAdminUser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginServiceTest.shouldReturnNullIfInvalidPassword" />
+      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1037,7 +976,11 @@
       <created>1349773869257</created>
       <updated>1349773869257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated Login Service to authenticate admin user">
+      <created>1349959250810</created>
+      <updated>1349959250810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1068,7 +1011,6 @@
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49578652" sideWeight="0.4987745" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1088,6 +1030,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1128,7 +1071,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Login Service to authenticate admin user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added log4j logging" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1145,6 +1088,7 @@
     <MESSAGE value="Introduced Placement officer role. Only PO can access list of students. PO registration happens with normal registration form, but have to intercept and change role." />
     <MESSAGE value="Configured tomcat-maven plugin with username and password in pom.xml" />
     <MESSAGE value="Updated Login Service to authenticate admin user" />
+    <MESSAGE value="Added log4j logging" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1188,21 +1132,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="58" selection-start="710" selection-end="710" vertical-scroll-proportion="0.2729927" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="616" selection-end="616" vertical-scroll-proportion="0.14890511" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="406" selection-end="406" vertical-scroll-proportion="0.099270076" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="492" selection-end="492" vertical-scroll-proportion="0.124087594" />
@@ -1216,11 +1145,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="50" selection-start="3466" selection-end="3466" vertical-scroll-proportion="0.34597877" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
@@ -1240,42 +1164,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/thoughtworks/placement/web/services/credentials.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.024817519" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.33088234">
+        <state line="20" column="34" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.33088234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="843" selection-end="843" vertical-scroll-proportion="0.20875913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="482" selection-end="482" vertical-scroll-proportion="0.12648809" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="417" selection-end="417" vertical-scroll-proportion="0.099270076" />
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/util/logging/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.10119048" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="21" selection-start="6051" selection-end="6051" vertical-scroll-proportion="0.9255474">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="0" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.40437958" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+        <state line="9" column="29" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="508" selection-end="508" vertical-scroll-proportion="0.32692307">
+        <state line="17" column="22" selection-start="540" selection-end="540" vertical-scroll-proportion="0.3105023">
           <folding />
         </state>
       </provider>
