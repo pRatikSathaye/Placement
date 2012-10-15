@@ -3,12 +3,16 @@ package com.thoughtworks.placement.web.controllers;
 import com.thoughtworks.placement.web.model.Event;
 import com.thoughtworks.placement.web.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Controller
 @RequestMapping(value = "/po")
@@ -36,5 +40,19 @@ public class PlacementOfficerController {
         ModelMap modelMap = new ModelMap();
         modelMap.put("event", new Event());
         return new ModelAndView("event_creation_page", modelMap);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "createEvent")
+    public ModelAndView createEvent(@ModelAttribute("event") Event event, HttpServletRequest request) {
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("event", new Event());
+        return new ModelAndView("event_creation_page", modelMap);
+    }
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat();
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));
     }
 }

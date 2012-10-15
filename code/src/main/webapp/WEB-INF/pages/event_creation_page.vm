@@ -13,22 +13,75 @@
 <div class="hero-unit">
     <h3>Create a new event</h3>
     <hr/>
-    <form id="event_form">
+    <form id="event_form" method="POST" action="po/createEvent">
         <fieldset title="Step 1">
             <legend>Date and Time</legend>
+            <div class="control-group">
+                <label class="control-label">Event Date</label>
+
+                <div class="controls">
+                    #springFormInput ('event.date' , 'placeholder="Date"')
+                </div>
+            </div>
         </fieldset>
 
         <fieldset title="Step 2">
             <legend>Company Details</legend>
+            <div class="control-group">
+                <label class="control-label">Company Name</label>
+
+                <div class="controls">
+                    #springFormInput ('event.company.name' , 'placeholder="Company Name"')
+                </div>
+
+                <label class="control-label">Description</label>
+
+                <div class="controls">
+                    #springFormInput ('event.company.description' , 'placeholder="Description"')
+                </div>
+            </div>
         </fieldset>
 
         <fieldset title="Step 3">
-            <legend>Candidates</legend>
+            <legend>Criteria</legend>
+
+            <div class="control-group">
+                <label class="control-label">SSC Marks</label>
+
+                <div class="controls">
+                    #springFormInput ('event.company.criteria.sscMarks' , 'placeholder="Minimum SSC Marks"')
+                </div>
+
+                <label class="control-label">HSC Marks</label>
+
+                <div class="controls">
+                    #springFormInput ('event.company.criteria.hscMarks' , 'placeholder="Minimum HSC Marks"')
+                </div>
+
+                <label class="control-label">Current Degree Marks</label>
+
+                <div class="controls">
+                    #springFormInput ('event.company.criteria.currentDegreeMarks' , 'placeholder="Minimum current degree Marks"')
+                </div>
+            </div>
         </fieldset>
 
         <fieldset title="Step 4">
             <legend>Notification</legend>
-            <input type="submit" class="btn btn-success btn-large finish"/>
+
+            <div class="control-group">
+                <label class="control-label">Please specify notification type</label>
+
+                <div class="controls">
+                    <input type="radio" name="event.notificationType" value="EMAIL" checked="checked"/>
+                    <label class="control-label">Email</label> <br/>
+
+                    <input type="radio" name="event.notificationType" value="MESSAGE"/>
+                    <label class="control-label">Message</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Create Event" class="btn btn-success btn-large finish"/>
         </fieldset>
 
     </form>

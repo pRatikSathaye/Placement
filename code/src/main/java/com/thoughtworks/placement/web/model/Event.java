@@ -13,6 +13,12 @@ public class Event {
 
     private NotificationType notificationType;
 
+    public Event() {
+        date = new Date();
+        company = new Company("","",new Criteria(0,0,0));
+        notificationType = NotificationType.EMAIL;
+    }
+
     public int getEventId() {
         return eventId;
     }

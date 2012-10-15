@@ -22,4 +22,16 @@ public class Criteria {
     public double getCurrentDegreeMarks() {
         return currentDegreeMarks;
     }
+
+    public void setSscMarks(double sscMarks) {
+        this.sscMarks = sscMarks;
+    }
+
+    public void setHscMarks(double hscMarks) {
+        this.hscMarks = hscMarks;
+    }
+
+    public void setCurrentDegreeMarks(double currentDegreeMarks) {
+        this.currentDegreeMarks = currentDegreeMarks;
+    }
 }
