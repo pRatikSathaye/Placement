@@ -3,8 +3,11 @@
     <meta name="menuName" content="event"/>
     <link href="resources/css/jquery.stepy.css" rel="stylesheet">
     <script src="resources/js/jquery.stepy.js"></script>
+    <link rel="stylesheet" href="resources/css/jquery-ui.css" />
+    <script src="resources/js/jquery-ui.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            $("#date").datepicker();
             $('#event_form').stepy();
         });
     </script>
