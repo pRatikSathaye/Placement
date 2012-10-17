@@ -1,16 +1,13 @@
 <head>
     <title>List Students</title>
     <meta name="menuName" content="event"/>
-    <link href="resources/css/jquery.stepy.css" rel="stylesheet">
     <script src="resources/js/jquery.stepy.js"></script>
-    <link rel="stylesheet" href="resources/css/jquery-ui.css" />
+    <link href="resources/css/jquery.stepy.css" rel="stylesheet">
     <script src="resources/js/jquery-ui.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#date").datepicker();
-            $('#event_form').stepy();
-        });
-    </script>
+    <link rel="stylesheet" href="resources/css/jquery-ui.css"/>
+    <script src="resources/js/jquery-ui-timepicker-addon.js"></script>
+    <script src="resources/js/jquery.validate.min.js"></script>
+
 </head>
 
 <div class="hero-unit">
@@ -28,7 +25,7 @@
             </div>
         </fieldset>
 
-        <fieldset title="Step 2">
+            <fieldset title="Step 2">
             <legend>Company Details</legend>
             <div class="control-group">
                 <label class="control-label">Company Name</label>
@@ -45,7 +42,7 @@
             </div>
         </fieldset>
 
-        <fieldset title="Step 3">
+            <fieldset title="Step 3">
             <legend>Criteria</legend>
 
             <div class="control-group">
@@ -69,7 +66,7 @@
             </div>
         </fieldset>
 
-        <fieldset title="Step 4">
+            <fieldset title="Step 4">
             <legend>Notification</legend>
 
             <div class="control-group">
@@ -84,8 +81,52 @@
                 </div>
             </div>
 
-            <input type="submit" value="Create Event" class="btn btn-success btn-large finish"/>
         </fieldset>
+            <input type="submit" value="Create Event" class="finish btn btn-success btn-large"/>
 
-    </form>
+        </form>
+        <br/>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#date").datetimepicker({
+                ampm:true,
+                beforeShow:function (input, inst) {
+                    inst.dpDiv.css({bottom:'0px', top:''});
+                }
+            });
+
+            $('#event_form').stepy({
+                backLabel:'Backward',
+                block:true,
+                errorImage:true,
+                nextLabel:'Forward',
+                titleClick:true,
+                validate:true
+            });
+
+            $('#event_form').validate({
+                errorPlacement:function (error, element) {
+                    $('#event_form div.stepy-error').append(error);
+                }, rules:{
+                    'date':'required',
+                    'company.name':'required',
+                    'company.description':'required',
+                    'company.criteria.sscMarks':'required',
+                    'company.criteria.hscMarks':'required',
+                    'company.criteria.currentDegreeMarks':'required'
+                }, messages:{
+                    'date':{ required:'Invalid Date'},
+                    'company.name':{ required:'Company name is required'},
+                    'company.description':{ required:'Company description is required'},
+                    'company.criteria.sscMarks':{ required:'SSC Marks is required'},
+                    'company.criteria.hscMarks':{ required:'HSC Marks is required'},
+                    'company.criteria.currentDegreeMarks':{ required:'Current degree marks is required'}
+                }
+            });
+
+
+        });
+    </script>
 </div>
