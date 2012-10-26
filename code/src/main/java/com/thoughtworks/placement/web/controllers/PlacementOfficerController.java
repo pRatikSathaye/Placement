@@ -1,6 +1,7 @@
 package com.thoughtworks.placement.web.controllers;
 
 import com.thoughtworks.placement.web.model.Event;
+import com.thoughtworks.placement.web.services.EventService;
 import com.thoughtworks.placement.web.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -21,6 +22,9 @@ public class PlacementOfficerController {
     @Autowired
     StudentService studentService;
 
+    @Autowired
+    EventService eventService;
+
     @RequestMapping(method = RequestMethod.GET, value = "listStudents")
     public ModelAndView list() {
         ModelMap modelMap = new ModelMap();
@@ -35,6 +39,14 @@ public class PlacementOfficerController {
         return new ModelAndView("students_list_page", modelMap);
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "listStudentsByCriteria/{sscMarks}/{hscMarks}/{currentDegreeMarks}")
+    public ModelAndView listWithCriteria(@PathVariable("sscMarks") double sscMarks, @PathVariable("hscMarks") double hscMarks , @PathVariable("currentDegreeMarks") double currentDegreeMarks) {
+        ModelMap modelMap = new ModelMap();
+        modelMap.put("studentList", studentService.getAllStudentsWithCriteria(sscMarks,hscMarks,currentDegreeMarks));
+        return new ModelAndView("students_list_page", modelMap);
+    }
+
+
     @RequestMapping(method = RequestMethod.GET, value = "createEvent")
     public ModelAndView eventPage() {
         ModelMap modelMap = new ModelMap();
@@ -45,6 +57,8 @@ public class PlacementOfficerController {
     @RequestMapping(method = RequestMethod.POST, value = "createEvent")
     public ModelAndView createEvent(@ModelAttribute("event") Event event, HttpServletRequest request) {
         ModelMap modelMap = new ModelMap();
+        eventService.save(event);
+        eventService.notifyStudents(event);
         modelMap.put("event", new Event());
         return new ModelAndView("event_creation_page", modelMap);
     }

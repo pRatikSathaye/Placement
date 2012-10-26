@@ -45,6 +45,23 @@ public class StudentServiceTest {
         }
     }
 
+    @Test
+    public void testGetAllStudentsWithCriteria() throws Exception {
+        List<Student> students = service.getAllStudentsWithCriteria(60,60,60);
+        assertNotNull(students);
+        for (Student student : students){
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getSscMarks() >= 60);
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getHscMarks() >= 60);
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getCurrentDegreeMarks() >= 60);
+        }
+    }
+
+    @Test
+    public void shouldReturnListOfEmailIds(){
+        List<String> emailIds = service.getEmailIds("gurpreet,test");
+        assertEquals(2,emailIds.size());
+    }
+
     @Test @Ignore
     public void testSaveStudent() throws Exception {
         fail("Not implemented");

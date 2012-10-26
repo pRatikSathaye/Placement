@@ -1,29 +1,36 @@
 package com.thoughtworks.placement.web.model;
 
-import java.util.Date;
-import java.util.List;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+import java.util.UUID;
+
+@Document
 public class Event {
-    private int eventId;
+    @Id
+    private UUID eventId;
     private Date date;
 
     private Company company;
 
-    private List<Student> students;
+    private String eligibleStudents;
 
     private NotificationType notificationType;
 
     public Event() {
+        eventId= UUID.randomUUID();
         date = new Date();
+        eligibleStudents="";
         company = new Company("","",new Criteria(0,0,0));
         notificationType = NotificationType.EMAIL;
     }
 
-    public int getEventId() {
+    public UUID getEventId() {
         return eventId;
     }
 
-    public Event setEventId(int eventId) {
+    public Event setEventId(UUID eventId) {
         this.eventId = eventId;
         return this;
     }
@@ -46,12 +53,12 @@ public class Event {
         return this;
     }
 
-    public List<Student> getStudents() {
-        return students;
+    public String getEligibleStudents() {
+        return eligibleStudents;
     }
 
-    public Event setStudents(List<Student> students) {
-        this.students = students;
+    public Event setEligibleStudents(String eligibleStudents) {
+        this.eligibleStudents = eligibleStudents;
         return this;
     }
 

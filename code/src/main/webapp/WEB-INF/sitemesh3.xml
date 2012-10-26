@@ -1,3 +1,4 @@
 <sitemesh>
+    <mapping path="*/po/listStudentsByCriteria/*" exclude="true"/>
     <mapping path="/*" decorator="/WEB-INF/decorators/layout.jsp"/>
 </sitemesh>

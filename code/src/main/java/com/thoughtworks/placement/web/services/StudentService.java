@@ -6,6 +6,8 @@ import com.thoughtworks.placement.web.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -32,5 +34,22 @@ public class StudentService {
 
     public Iterable<Student> getAllCurrentMarksGreaterThan(double marks) {
         return repository.findByCurrentDegreeMarksGreaterThan(marks);
+    }
+
+    public List<Student> getAllStudentsWithCriteria(double sscMarks, double hscMarks, double currentDegreeMarks) {
+        return repository.findBySscMarksAndHscMarksAndCurrentDegreeMarksGreaterThan(sscMarks, hscMarks, currentDegreeMarks);
+    }
+
+    public List<String> getEmailIds(String studentIds) {
+        List<String> listOfIds = Arrays.asList(studentIds.split(","));
+        List<String> emailList=new ArrayList<String>();
+        for (String id : listOfIds) {
+            Student student = find(id);
+            if(student!=null) {
+                emailList.add(student.getEmail());
+            }
+
+        }
+        return emailList;
     }
 }

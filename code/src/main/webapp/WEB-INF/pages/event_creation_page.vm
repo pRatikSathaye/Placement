@@ -65,8 +65,15 @@
                 </div>
             </div>
         </fieldset>
-
-            <fieldset title="Step 4">
+        <fieldset title="Step 4">
+               <legend>Eligible Students</legend>
+               <div class="control-group">
+                   <div id="listOfEligibleStudents" class="controls">
+                   </div>
+                   #springFormHiddenInput ('event.eligibleStudents', '')
+               </div>
+           </fieldset>
+            <fieldset title="Step 5">
             <legend>Notification</legend>
 
             <div class="control-group">
@@ -82,7 +89,8 @@
             </div>
 
         </fieldset>
-            <input type="submit" value="Create Event" class="finish btn btn-success btn-large"/>
+
+            <input type="submit" style="font-size:14px" value="Create Event" class="finish btn btn-success"/>
 
         </form>
         <br/>
@@ -126,7 +134,24 @@
                 }
             });
 
+            $("#event_form-next-2").click(function(){
+                criteria=document.getElementById("company.criteria.sscMarks").value+"/"+document.getElementById("company.criteria.hscMarks").value+"/"+document.getElementById("company.criteria.currentDegreeMarks").value;
+                $.ajax({
+                        url:"po/listStudentsByCriteria/"+criteria,
+                        success:function(result) {
+                            $("#listOfEligibleStudents").html(result);
+                        }
+                    });
+            });
 
+            $("#event_form-next-3").click(function(){
+                var students = [];
+                $('td input:checked').each(function () {
+                    var emailID=$(this).closest("tr").children("td")[4];
+                    students.push($(emailID).text());
+                });
+                document.getElementById("eligibleStudents").value=students;
+            });
         });
     </script>
 </div>

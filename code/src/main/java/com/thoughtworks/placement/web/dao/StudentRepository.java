@@ -18,6 +18,9 @@ public interface StudentRepository extends PagingAndSortingRepository<Student, S
     @Query("{\"marks.currentDegreeMarks\":{$gt:?0}}")
     List<Student> findByCurrentDegreeMarksGreaterThan(double marks);
 
+    @Query("{\"marks.sscMarks\":{$gt:?0} , \"marks.hscMarks\":{$gt:?1}} , \"marks.currentDegreeMarks\":{$gt:?2}")
+    List<Student> findBySscMarksAndHscMarksAndCurrentDegreeMarksGreaterThan(double sscMarks,double hscMarks,double currentDegreeMarks);
+
     List<Student> findByRole(Role role);
 
     Page<Student> findByFullName(String fullName, Pageable pageable);

@@ -11,21 +11,18 @@
                 $('td input:checkbox', table).attr('checked', this.checked);
             });
 
-            $('#submitStudent').click(function (e) {
-                e.preventDefault(); //stop the default form action
-                var students = [];
-                $('td input:checked').each(function () {
-                    students.push($(this).attr("value"));
-                });
-                alert(students);
-            });
+//            $('#submitStudent').click(function (e) {
+//                e.preventDefault(); //stop the default form action
+//                var students = [];
+//                $('td input:checked').each(function () {
+//                    students.push($(this).attr("value"));
+//                });
+//            });
         });
     </script>
 </head>
 
 <div class="hero-unit">
-    <h3>Students List</h3>
-    <hr/>
     <table id="studentsList" class="table table-bordered">
         <thead>
         <tr>
@@ -54,7 +51,5 @@
             #end
         </tbody>
     </table>
-    <div style="float: right;">
-        <input type="button" class="btn btn-success btn-large" value="Send Notifications" id="submitStudent"/>
-    </div>
+
 </div>

@@ -1,10 +1,13 @@
 package com.thoughtworks.placement.web.controllers;
 
+import com.thoughtworks.placement.web.model.Event;
 import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
+import com.thoughtworks.placement.web.services.EventService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.mock.web.MockHttpServletRequest;
@@ -12,6 +15,7 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockHttpSession;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,6 +24,8 @@ import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAda
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.verify;
+import static org.mockito.MockitoAnnotations.Mock;
 import static org.springframework.test.web.ModelAndViewAssert.assertModelAttributeAvailable;
 import static org.springframework.test.web.ModelAndViewAssert.assertViewName;
 
@@ -31,7 +37,8 @@ public class PlacementOfficerControllerTest {
     private ApplicationContext applicationContext;
     @Autowired
     private PlacementOfficerController controller;
-
+    @Mock
+    EventService eventService;
     private MockHttpServletRequest request;
     private MockHttpServletResponse response;
     private HandlerAdapter handlerAdapter;
@@ -39,6 +46,7 @@ public class PlacementOfficerControllerTest {
 
     @Before
     public void setUp() {
+        MockitoAnnotations.initMocks(this);
         request = new MockHttpServletRequest();
         request.setAttribute(HandlerMapping.INTROSPECT_TYPE_LEVEL_MAPPING, true);
 
@@ -72,5 +80,41 @@ public class PlacementOfficerControllerTest {
         for (Student student : studentList){
             assertTrue("Students marks should be >= specified marks.", student.getMarks().getCurrentDegreeMarks() >= 60);
         }
+    }
+
+    @Test
+    public void shouldSatisfyCriteria() throws Exception {
+        request.setRequestURI("/po/listStudentsByCriteria/60/60/60");
+        request.setMethod("GET");
+        final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
+        assertViewName(responseView, "students_list_page");
+        assertModelAttributeAvailable(responseView, "studentList");
+        List<Student> studentList = (List<Student>) responseView.getModel().get("studentList");
+        for (Student student : studentList){
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getSscMarks() >= 60);
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getHscMarks() >= 60);
+            assertTrue("Students marks should be >= specified marks.", student.getMarks().getCurrentDegreeMarks() >= 60);
+        }
+    }
+
+    @Test
+    public void shouldCreateEvent() throws Exception {
+        request.setRequestURI("/po/createEvent");
+        request.setMethod("GET");
+        final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
+        assertViewName(responseView, "event_creation_page");
+        assertModelAttributeAvailable(responseView, "event");
+    }
+
+    @Test
+    public void shouldSaveEvent() throws Exception {
+        ReflectionTestUtils.setField(controller,"eventService",eventService);
+        Event event = new Event();
+        ModelAndView modelAndView = controller.createEvent(event, request);
+
+        verify(eventService).save(event);
+        verify(eventService).notifyStudents(event);
+        assertViewName(modelAndView, "event_creation_page");
+        assertModelAttributeAvailable(modelAndView, "event");
     }
 }

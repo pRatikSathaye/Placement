@@ -116,6 +116,18 @@ public class StudentRepositoryStub implements StudentRepository {
     }
 
     @Override
+    public List<Student> findBySscMarksAndHscMarksAndCurrentDegreeMarksGreaterThan(double sscMarks, double hscMarks, double currentDegreeMarks) {
+        List<Student> found = new ArrayList<Student>();
+        for (Student student : students){
+            Marks studentMarks = student.getMarks();
+            if (studentMarks.getSscMarks()>= sscMarks && studentMarks.getHscMarks() >= hscMarks && studentMarks.getCurrentDegreeMarks()>=currentDegreeMarks ){
+                found.add(student);
+            }
+        }
+        return found;
+    }
+
+    @Override
     public List<Student> findByRole(Role role) {
         List<Student> found = new ArrayList<Student>();
         for (Student student : students){
