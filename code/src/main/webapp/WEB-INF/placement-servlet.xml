@@ -13,6 +13,8 @@
     <mvc:annotation-driven/>
     <context:component-scan base-package="com.thoughtworks.placement.web.*"/>
 
+    <context:property-placeholder ignore-resource-not-found="true" ignore-unresolvable="true" location="resources/credentials.properties" />
+
     <mvc:interceptors>
         <bean class="com.thoughtworks.placement.web.interceptors.UserAuthenticationInterceptor">
             <property name="excludedPaths" value="login,logout,register" />

@@ -6,13 +6,10 @@ import com.thoughtworks.placement.web.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/placement-servlet-test.xml"})
@@ -59,6 +56,16 @@ public class LoginServiceTest {
         assertNotNull(student);
         assertEquals(Role.PLACEMENT_OFFICER,student.getRole());
     }
+
+    @Test
+    public void shouldReturnNullIfInvalidAdminUser() throws Exception {
+        User user = new User();
+        user.setUsername("admin_invalid"); user.setPassword("password");
+
+        Student student = service.checkIfValidUser(user);
+        assertNull(student);
+    }
+
 
     @Test
     public void shouldReturnNullIfNullUserIsPassed() throws Exception {
