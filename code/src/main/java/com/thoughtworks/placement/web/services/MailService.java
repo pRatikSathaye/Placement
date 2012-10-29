@@ -27,7 +27,7 @@ public class MailService {
 
     public void notifyStudents(Event event) {
         String messageBody = createMessageBody(event.getCompany(), event.getDate());
-        String[] to = event.getEligibleStudents().split(",");
+        String[] to = event.getEmailIdsOfEligibleStudents().split(",");
         sendMail("dummy@dummy.com", to,"About Campus",messageBody);
     }
 

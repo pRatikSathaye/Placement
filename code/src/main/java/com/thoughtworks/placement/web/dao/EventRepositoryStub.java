@@ -20,13 +20,13 @@ public class EventRepositoryStub implements EventRepository{
         Event event = new Event();
         event.setEventId(new UUID(1234,5678));
         event.setCompany(new Company("Company1", "description", new Criteria(60, 60, 60)));
-        event.setEligibleStudents("1234,1235");
+        event.setEmailIdsOfEligibleStudents("abc@some.com,xyz@some.com");
         events.add(event);
 
         event=new Event();
         event.setEventId(new UUID(1234,5679));
         event.setCompany(new Company("Company2","description",new Criteria(60,60,70)));
-        event.setEligibleStudents("1234,12346");
+        event.setEmailIdsOfEligibleStudents("abc@some.com,pqr@some.com");
         events.add(event);
 
     }

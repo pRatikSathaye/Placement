@@ -70,7 +70,7 @@
                <div class="control-group">
                    <div id="listOfEligibleStudents" class="controls">
                    </div>
-                   #springFormHiddenInput ('event.eligibleStudents', '')
+                   #springFormHiddenInput ('event.emailIdsOfEligibleStudents', '')
                </div>
            </fieldset>
             <fieldset title="Step 5">
@@ -148,9 +148,11 @@
                 var students = [];
                 $('td input:checked').each(function () {
                     var emailID=$(this).closest("tr").children("td")[4];
-                    students.push($(emailID).text());
+                    if($(emailID).text()) {
+                        students.push($(emailID).text());
+                    }
                 });
-                document.getElementById("eligibleStudents").value=students;
+                document.getElementById("emailIdsOfEligibleStudents").value=students;
             });
         });
     </script>

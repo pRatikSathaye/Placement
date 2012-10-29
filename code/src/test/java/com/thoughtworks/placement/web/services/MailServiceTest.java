@@ -21,7 +21,7 @@ public class MailServiceTest {
 
         Event event = new Event();
         event.setCompany(new Company("company", "description", new Criteria(60, 60, 60)));
-        event.setEligibleStudents(to);
+        event.setEmailIdsOfEligibleStudents(to);
         mailService.notifyStudents(event);
     }
 }
