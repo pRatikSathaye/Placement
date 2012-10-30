@@ -1,7 +1,7 @@
 package com.thoughtworks.placement.web.model;
 
 public class DummyStudent {
-    private String SID="12345";
+    private String sid ="12345";
 
     private String fullName="Shirish Padalkar";
 
@@ -11,8 +11,8 @@ public class DummyStudent {
     private Marks marks;
 
 
-    public DummyStudent setSID(String SID) {
-        this.SID = SID;
+    public DummyStudent setSid(String sid) {
+        this.sid = sid;
         return this;
     }
 
@@ -65,7 +65,7 @@ public class DummyStudent {
         return this;
     }
 
-    public String getSID() {
-        return SID;
+    public String getSid() {
+        return sid;
     }
 }

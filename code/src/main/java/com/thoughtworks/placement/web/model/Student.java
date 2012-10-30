@@ -15,6 +15,8 @@ public class Student {
     private String password;
     private String email;
     private Marks marks;
+    private boolean isPlaced=false;
+    private boolean isDreamChance=false;
 
     private Role role = Role.STUDENT;
 
@@ -93,5 +95,21 @@ public class Student {
     public Student setRole(Role role) {
         this.role = role;
         return this;
+    }
+
+    public boolean isPlaced() {
+        return isPlaced;
+    }
+
+    public void setPlaced(boolean placed) {
+        isPlaced = placed;
+    }
+
+    public boolean isDreamChance() {
+        return isDreamChance;
+    }
+
+    public void setDreamChance(boolean dreamChance) {
+        isDreamChance = dreamChance;
     }
 }

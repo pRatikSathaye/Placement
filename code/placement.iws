@@ -4,35 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" line="65" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="Implemented email notification to eligible students on event creation">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iml" afterPath="$PROJECT_DIR$/placement.iml" />
+    <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
     </list>
     <ignored path="placement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,19 +69,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" line="58" class="com.thoughtworks.placement.web.controllers.PlacementOfficerController" package="com.thoughtworks.placement.web.controllers">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -151,7 +113,7 @@
       <file leaf-file-name="StudentService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+            <state line="26" column="15" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#1385#1393#0" expanded="true" />
               </folding>
@@ -159,59 +121,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlacementOfficerController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+            <state line="16" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event_creation_page.vm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
+      <file leaf-file-name="DummyStudent.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="84" selection-start="6072" selection-end="6072" vertical-scroll-proportion="-2.1153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="students_list_page.vm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="82" selection-start="218" selection-end="218" vertical-scroll-proportion="-3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="1.002331">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
+            <state line="47" column="73" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.3880266">
               <folding />
             </state>
           </provider>
@@ -231,9 +153,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
@@ -247,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java" />
       </list>
     </option>
   </component>
@@ -1307,7 +1229,11 @@
       <created>1350458989820</created>
       <updated>1350458989820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Event should contain sidsOfEligibleStudents instead of email ids">
+      <created>1351575780883</created>
+      <updated>1351575780883</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1352,7 +1278,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.6011236" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24856322" sideWeight="0.67134833" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24856322" sideWeight="0.67134833" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1398,7 +1324,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented email notification to eligible students on event creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event should contain sidsOfEligibleStudents instead of email ids" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1419,6 +1345,7 @@
     <MESSAGE value="Added datepicker in event creation wizard" />
     <MESSAGE value="Added validation to event creation wizard. Also added code coverage plugin" />
     <MESSAGE value="Implemented email notification to eligible students on event creation" />
+    <MESSAGE value="Event should contain sidsOfEligibleStudents instead of email ids" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1462,20 +1389,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="68" selection-start="3678" selection-end="3678" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="84" selection-start="4084" selection-end="4084" vertical-scroll-proportion="0.97384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="26" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
@@ -1518,20 +1431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="82" selection-start="218" selection-end="218" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="84" selection-start="6072" selection-end="6072" vertical-scroll-proportion="-2.1153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="29" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.5294118">
@@ -1546,37 +1445,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="112" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.6773723">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.7766423">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="82" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1289833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="84" selection-start="6072" selection-end="6072" vertical-scroll-proportion="0.6315789">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="2600" selection-end="2600" vertical-scroll-proportion="0.4940476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+        <state line="26" column="15" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1385#1393#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+        <state line="16" column="66" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/DummyStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="1.002331">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="47" column="73" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.3880266">
+          <folding />
         </state>
       </provider>
     </entry>
