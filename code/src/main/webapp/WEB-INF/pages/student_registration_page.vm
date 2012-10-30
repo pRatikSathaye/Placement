@@ -17,7 +17,7 @@
             <label class="control-label">Student ID</label>
 
             <div class="controls">
-                #springFormInput ('student.SID' , 'class="input-xlarge" rel="popover"
+                #springFormInput ('student.sid' , 'class="input-xlarge" rel="popover"
                                                    data-original-title="Student University ID"
                                                    data-content="Enter your unique university registration number."')
             </div>

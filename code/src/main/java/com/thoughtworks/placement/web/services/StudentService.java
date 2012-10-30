@@ -41,15 +41,11 @@ public class StudentService {
     }
 
     public List<String> getEmailIds(String studentIds) {
-        List<String> listOfIds = Arrays.asList(studentIds.split(","));
-        List<String> emailList=new ArrayList<String>();
-        for (String id : listOfIds) {
-            Student student = find(id);
-            if(student!=null) {
-                emailList.add(student.getEmail());
-            }
-
+        List<String> emailIds=new ArrayList<String>();
+        List<Student> students = repository.findBySidIn(Arrays.asList(studentIds.split(",")));
+        for (Student student : students) {
+            emailIds.add(student.getEmail());
         }
-        return emailList;
+        return emailIds;
     }
 }

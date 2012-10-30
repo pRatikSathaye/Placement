@@ -38,7 +38,7 @@ public class UserAuthenticationInterceptorTest {
 
     @Test
     public void testPreHandleForLoggedInUser() throws Exception {
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish").setRole(Role.PLACEMENT_OFFICER));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish").setRole(Role.PLACEMENT_OFFICER));
 
         interceptor = new UserAuthenticationInterceptor();
         assertTrue("User Interceptor should return true for logged in user", interceptor.preHandle(request, response, handlerAdapter));

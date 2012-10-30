@@ -20,7 +20,7 @@
                 <label class="control-label">Student ID</label>
 
                 <div class="controls">
-                    #springFormInput ('student.SID' , 'class="input-xlarge uneditable-input" readonly="readonly"')
+                    #springFormInput ('student.sid' , 'class="input-xlarge uneditable-input" readonly="readonly"')
                 </div>
             </div>
 

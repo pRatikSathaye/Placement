@@ -14,14 +14,14 @@ public class Event {
 
     private Company company;
 
-    private String emailIdsOfEligibleStudents;
+    private String sidsOfEligibleStudents;
 
     private NotificationType notificationType;
 
     public Event() {
         eventId= UUID.randomUUID();
         date = new Date();
-        emailIdsOfEligibleStudents ="";
+        sidsOfEligibleStudents ="";
         company = new Company("","",new Criteria(0,0,0));
         notificationType = NotificationType.EMAIL;
     }
@@ -53,12 +53,12 @@ public class Event {
         return this;
     }
 
-    public String getEmailIdsOfEligibleStudents() {
-        return emailIdsOfEligibleStudents;
+    public String getSidsOfEligibleStudents() {
+        return sidsOfEligibleStudents;
     }
 
-    public Event setEmailIdsOfEligibleStudents(String emailIdsOfEligibleStudents) {
-        this.emailIdsOfEligibleStudents = emailIdsOfEligibleStudents;
+    public Event setSidsOfEligibleStudents(String sidsOfEligibleStudents) {
+        this.sidsOfEligibleStudents = sidsOfEligibleStudents;
         return this;
     }
 

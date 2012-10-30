@@ -10,6 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.util.ReflectionTestUtils;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
@@ -49,8 +50,9 @@ public class EventServiceTest {
         ReflectionTestUtils.setField(eventService,"mailService",mailService);
         Event event = new Event();
 
-        eventService.notifyStudents(event);
+        List<String> emailIds = Arrays.asList("12345");
+        eventService.notifyStudents(event, emailIds);
 
-        verify(mailService).notifyStudents(event);
+        verify(mailService).notifyStudents(event, emailIds);
     }
 }

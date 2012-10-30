@@ -1,6 +1,6 @@
 <%@ page import="com.thoughtworks.placement.web.controllers.LoginController" %>
-<%@ page import="com.thoughtworks.placement.web.model.Student" %>
 <%@ page import="com.thoughtworks.placement.web.model.Role" %>
+<%@ page import="com.thoughtworks.placement.web.model.Student" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -85,7 +85,7 @@
                 <form class="navbar-form pull-right" method="POST" action="logout">
                     <button type="submit" class="btn btn-link">Logout</button>
                 </form>
-                <form class="navbar-form pull-right" method="GET" action="student/profile/<%=user.getSID()%>">
+                <form class="navbar-form pull-right" method="GET" action="student/profile/<%=user.getSid()%>">
                     <button type="submit" class="btn btn-link">Profile</button>
                 </form>
                 <%

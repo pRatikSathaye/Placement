@@ -39,8 +39,8 @@
         <tbody>
             #foreach( $student in $studentList )
             <tr>
-                <td><input type="checkbox" id="select_${student.SID}" name="select_${student.SID}" value="${student.SID}"/></td>
-                <td>${student.SID}</td>
+                <td><input type="checkbox" id="select_${student.sid}" name="select_${student.sid}" value="${student.sid}"/></td>
+                <td>${student.sid}</td>
                 <td>${student.fullName}</td>
                 <td>${student.phoneNumber}</td>
                 <td>${student.email}</td>

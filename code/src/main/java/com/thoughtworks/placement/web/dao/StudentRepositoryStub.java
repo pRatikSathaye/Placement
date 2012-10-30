@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @StubRepository
@@ -41,7 +42,7 @@ public class StudentRepositoryStub implements StudentRepository {
     @Override
     public Student findOne(String username){
         for (Student student : students){
-            if (student.getSID().equals(username)){
+            if (student.getSid().equals(username)){
                 return student;
             }
         }
@@ -84,9 +85,9 @@ public class StudentRepositoryStub implements StudentRepository {
     }
 
     @Override
-    public Student findBySID(String sid) {
+    public Student findBySid(String sid) {
         for (Student student : students){
-            if (student.getSID().equals(sid)){
+            if (student.getSid().equals(sid)){
                 return student;
             }
         }
@@ -141,6 +142,17 @@ public class StudentRepositoryStub implements StudentRepository {
     @Override
     public Page<Student> findByFullName(String fullName, Pageable pageable) {
         return null;
+    }
+
+    @Override
+    public List<Student> findBySidIn(Collection<String> sidList) {
+        List<Student> found = new ArrayList<Student>();
+        for (Student student : students){
+            if (sidList.contains(student.getSid())){
+                found.add(student);
+            }
+        }
+        return found;
     }
 
     @Override

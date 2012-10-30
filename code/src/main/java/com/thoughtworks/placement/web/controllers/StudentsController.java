@@ -24,7 +24,7 @@ public class StudentsController {
     @RequestMapping(method = RequestMethod.GET, value = "profile/{SID}")
     public ModelAndView showProfilePage(@PathVariable("SID") String studentID, HttpServletRequest request) {
         Student loggedInUser = (Student) request.getSession().getAttribute(LoginController.LOGGED_IN_USER_KEY);
-        if (! loggedInUser.getSID().equals(studentID)){
+        if (! loggedInUser.getSid().equals(studentID)){
             return new ModelAndView("redirect:/");
         }
         ModelMap modelMap = new ModelMap();
@@ -36,11 +36,11 @@ public class StudentsController {
     @RequestMapping(method = RequestMethod.POST, value = "profile/update")
     public ModelAndView registerStudent(@ModelAttribute("student") Student student, HttpServletRequest request) {
         Student loggedInUser = (Student) request.getSession().getAttribute(LoginController.LOGGED_IN_USER_KEY);
-        if (! loggedInUser.getSID().equals(student.getSID())){
+        if (! loggedInUser.getSid().equals(student.getSid())){
             return new ModelAndView("redirect:/");
         }
 
-        Student studentToUpdate = studentService.find(student.getSID());
+        Student studentToUpdate = studentService.find(student.getSid());
         studentToUpdate.setFullName(student.getFullName());
         studentToUpdate.setPhoneNumber(student.getPhoneNumber());
         studentToUpdate.setEmail(student.getEmail());
@@ -58,6 +58,6 @@ public class StudentsController {
         ModelMap modelMap = new ModelMap();
         modelMap.put("message", "Your profile has been updated successfully.");
 
-        return new ModelAndView("redirect:/student/profile/"+student.getSID(), modelMap);
+        return new ModelAndView("redirect:/student/profile/"+student.getSid(), modelMap);
     }
 }

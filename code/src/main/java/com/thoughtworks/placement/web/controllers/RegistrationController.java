@@ -31,7 +31,7 @@ public class RegistrationController {
     public ModelAndView registerStudent(@ModelAttribute("student") Student student, HttpServletRequest request) {
         studentService.save(student);
         request.getSession().setAttribute(LoginController.LOGGED_IN_USER_KEY, student);
-        return new ModelAndView("redirect:student/profile/"+student.getSID());
+        return new ModelAndView("redirect:student/profile/"+student.getSid());
     }
 
 }

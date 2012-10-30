@@ -38,7 +38,7 @@ public class StudentAuthorizationInterceptorTest {
 
     @Test
     public void testPreHandleForPlacementOfficer() throws Exception {
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish").setRole(Role.PLACEMENT_OFFICER));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish").setRole(Role.PLACEMENT_OFFICER));
 
         interceptor = new StudentAuthorizationInterceptor();
         assertFalse("Student Interceptor should return false for Placement officer", interceptor.preHandle(request, response, handlerAdapter));
@@ -46,7 +46,7 @@ public class StudentAuthorizationInterceptorTest {
 
     @Test
     public void testPreHandleForStudent() throws Exception {
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish").setRole(Role.STUDENT));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish").setRole(Role.STUDENT));
 
         interceptor = new StudentAuthorizationInterceptor();
         assertTrue("Student Interceptor should return true for Student", interceptor.preHandle(request, response, handlerAdapter));

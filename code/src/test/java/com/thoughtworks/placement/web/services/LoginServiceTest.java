@@ -25,7 +25,7 @@ public class LoginServiceTest {
 
         Student student = service.checkIfValidUser(user);
         assertNotNull(student);
-        assertEquals("Username should be equal", user.getUsername(), student.getSID());
+        assertEquals("Username should be equal", user.getUsername(), student.getSid());
         assertEquals("Password should be equal", user.getPassword(), student.getPassword());
     }
 

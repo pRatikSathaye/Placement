@@ -58,7 +58,7 @@ public class PlacementOfficerController {
     public ModelAndView createEvent(@ModelAttribute("event") Event event, HttpServletRequest request) {
         ModelMap modelMap = new ModelMap();
         eventService.save(event);
-        eventService.notifyStudents(event);
+        eventService.notifyStudents(event,studentService.getEmailIds(event.getSidsOfEligibleStudents()));
         modelMap.put("event", new Event());
         return new ModelAndView("event_creation_page", modelMap);
     }

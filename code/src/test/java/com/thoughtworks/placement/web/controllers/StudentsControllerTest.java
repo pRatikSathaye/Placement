@@ -12,15 +12,11 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockHttpSession;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter;
 
-import java.util.List;
-
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.springframework.test.web.ModelAndViewAssert.assertModelAttributeAvailable;
 import static org.springframework.test.web.ModelAndViewAssert.assertViewName;
@@ -48,7 +44,7 @@ public class StudentsControllerTest {
         request.setAttribute(HandlerMapping.INTROSPECT_TYPE_LEVEL_MAPPING, true);
 
         session = new MockHttpSession();
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish"));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish"));
         request.setSession(session);
 
         response = new MockHttpServletResponse();

@@ -85,7 +85,7 @@ public class LoginControllerTest {
     public void testLogout() throws Exception {
         request.setRequestURI("/logout");
         request.setMethod("POST");
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish"));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish"));
 
         final ModelAndView responseView = handlerAdapter.handle(request, response, controller);
 

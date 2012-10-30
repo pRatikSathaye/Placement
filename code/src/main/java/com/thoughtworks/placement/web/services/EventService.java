@@ -5,6 +5,8 @@ import com.thoughtworks.placement.web.model.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EventService {
 
@@ -30,7 +32,7 @@ public class EventService {
         return repository.findAll();
     }
 
-    public void notifyStudents(Event event) {
-         mailService.notifyStudents(event);
+    public void notifyStudents(Event event, List<String> emailIds) {
+         mailService.notifyStudents(event,emailIds);
     }
 }

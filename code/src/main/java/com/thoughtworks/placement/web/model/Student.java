@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Student {
 
     @Id
-    private String SID;
+    private String sid;
 
     private String fullName;
 
@@ -23,7 +23,7 @@ public class Student {
     }
 
     public Student(String SID, String fullName, String phoneNumber, String password, String email, Marks marks, Role role) {
-        this.SID = SID;
+        this.sid = SID;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         this.password = password;
@@ -32,12 +32,12 @@ public class Student {
         this.role = role;
     }
 
-    public String getSID() {
-        return SID;
+    public String getSid() {
+        return sid;
     }
 
-    public Student setSID(String SID) {
-        this.SID = SID;
+    public Student setSid(String sid) {
+        this.sid = sid;
         return this;
     }
 

@@ -5,27 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="555ea277-fa98-4346-ad70-d6b73c261126" name="Default" comment="Implemented email notification to eligible students on event creation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iml" afterPath="$PROJECT_DIR$/placement.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.ipr" afterPath="$PROJECT_DIR$/placement.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/placement.iws" afterPath="$PROJECT_DIR$/placement.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/RegistrationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_profile_page.vm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/student_registration_page.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet-test.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/LoginControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/StudentsControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/PlacementOfficerAuthorizationInterceptorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/StudentAuthorizationInterceptorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/interceptors/UserAuthenticationInterceptorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/LoginServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
     </list>
     <ignored path="placement.iws" />
@@ -88,6 +94,19 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" line="58" class="com.thoughtworks.placement.web.controllers.PlacementOfficerController" package="com.thoughtworks.placement.web.controllers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -129,28 +148,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="StudentService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="17" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.33259425">
+            <state line="48" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1385#1393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlacementOfficerController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationControllerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/RegistrationControllerTest.java">
+      <file leaf-file-name="event_creation_page.vm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="16" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
+            <state line="151" column="84" selection-start="6072" selection-end="6072" vertical-scroll-proportion="-2.1153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java">
+      <file leaf-file-name="students_list_page.vm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+            <state line="5" column="82" selection-start="218" selection-end="218" vertical-scroll-proportion="-3.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,22 +197,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlacementOfficerControllerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java">
+      <file leaf-file-name="MailService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="39" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="31" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="1.002331">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="placement-servlet.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="Event.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="30" selection-start="2069" selection-end="2069" vertical-scroll-proportion="-6.318182">
+            <state line="56" column="0" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,22 +231,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Criteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet-test.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/StudentsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java" />
       </list>
     </option>
   </component>
@@ -332,16 +370,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,6 +405,24 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="placement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -477,48 +523,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thoughtworks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -680,20 +684,30 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="201" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="201" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="199" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="204" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="998" />
@@ -709,9 +723,9 @@
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -719,8 +733,8 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -753,62 +767,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in placement">
-    <configuration default="false" name="MailServiceTest.sendSMS" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="placement" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.MailServiceTest" />
-      <option name="METHOD_NAME" value="sendSMS" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlacementOfficerControllerTest.shouldSaveEvent" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.thoughtworks.placement.web.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="placement" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.controllers.PlacementOfficerControllerTest" />
-      <option name="METHOD_NAME" value="shouldSaveEvent" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="PlacementOfficerControllerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -888,6 +846,62 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="StudentServiceTest.shouldReturnListOfEmailIds" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="placement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.StudentServiceTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfEmailIds" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.placement.web.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="placement" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.placement.web.services" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.placement.web.services.StudentServiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -940,6 +954,25 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -966,25 +999,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1026,18 +1040,6 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1057,6 +1059,42 @@
       </option>
       <envs />
       <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51726" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1125,30 +1163,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote">
-      <option name="LOCAL" value="false" />
-      <deployment />
-      <server-settings>
-        <data>
-          <option name="transportHostId" />
-        </data>
-      </server-settings>
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51726" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1232,11 +1246,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat7" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MailServiceTest.sendSMS" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PlacementOfficerControllerTest.shouldSaveEvent" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PlacementOfficerControllerTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EventServiceTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.All in placement" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PlacementOfficerControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EventServiceTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in placement" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.StudentServiceTest.shouldReturnListOfEmailIds" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.StudentServiceTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1448,132 +1462,121 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/layout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="82" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1457#1465#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="53" selection-start="6033" selection-end="6033" vertical-scroll-proportion="-2.5769231">
+        <state line="82" column="68" selection-start="3678" selection-end="3678" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet-test.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepositoryStub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="51" selection-start="2429" selection-end="2429" vertical-scroll-proportion="-13.090909">
+        <state line="142" column="84" selection-start="4084" selection-end="4084" vertical-scroll-proportion="0.97384614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/StudentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="58" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+        <state line="28" column="26" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar!/org/mockito/MockitoAnnotations.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="80" selection-start="2423" selection-end="2423" vertical-scroll-proportion="0.41815478">
+        <state line="20" column="29" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.6744868">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/sitemesh3.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="11" selection-end="11" vertical-scroll-proportion="0.024817519">
+        <state line="121" column="0" selection-start="5551" selection-end="5551" vertical-scroll-proportion="1.2110817">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/dao/EventRepositoryStub.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/StudentServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1771" selection-end="1771" vertical-scroll-proportion="1.4890511">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="22" selection-start="820" selection-end="820" vertical-scroll-proportion="0.5675266">
+        <state line="60" column="40" selection-start="2321" selection-end="2321" vertical-scroll-proportion="1.0316622">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/EventServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="57" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.20583941">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="293" selection-end="293" vertical-scroll-proportion="0.19854015">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/RegistrationControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="16" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
+        <state line="53" column="51" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.7630923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/services/MailServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+        <state line="26" column="73" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.72069824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/students_list_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="82" selection-start="218" selection-end="218" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/event_creation_page.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="84" selection-start="6072" selection-end="6072" vertical-scroll-proportion="-2.1153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="29" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.5294118">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/model/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1385#1393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/controllers/PlacementOfficerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/EventService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/placement/web/controllers/PlacementOfficerControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/placement/web/services/MailService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="39" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/placement-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="30" selection-start="2069" selection-end="2069" vertical-scroll-proportion="-6.318182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="17" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.33259425">
-          <folding />
+        <state line="31" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="1.002331">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

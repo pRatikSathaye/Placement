@@ -4,6 +4,7 @@ import com.thoughtworks.placement.web.model.Event;
 import com.thoughtworks.placement.web.model.Role;
 import com.thoughtworks.placement.web.model.Student;
 import com.thoughtworks.placement.web.services.EventService;
+import com.thoughtworks.placement.web.services.StudentService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,6 +40,8 @@ public class PlacementOfficerControllerTest {
     private PlacementOfficerController controller;
     @Mock
     EventService eventService;
+    @Mock
+    StudentService studentService;
     private MockHttpServletRequest request;
     private MockHttpServletResponse response;
     private HandlerAdapter handlerAdapter;
@@ -51,7 +54,7 @@ public class PlacementOfficerControllerTest {
         request.setAttribute(HandlerMapping.INTROSPECT_TYPE_LEVEL_MAPPING, true);
 
         session = new MockHttpSession();
-        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSID("shirish").setRole(Role.PLACEMENT_OFFICER));
+        session.setAttribute(LoginController.LOGGED_IN_USER_KEY, new Student().setSid("shirish").setRole(Role.PLACEMENT_OFFICER));
         request.setSession(session);
 
         response = new MockHttpServletResponse();
@@ -109,11 +112,13 @@ public class PlacementOfficerControllerTest {
     @Test
     public void shouldSaveEvent() throws Exception {
         ReflectionTestUtils.setField(controller,"eventService",eventService);
+        ReflectionTestUtils.setField(controller,"studentService",studentService);
+
         Event event = new Event();
         ModelAndView modelAndView = controller.createEvent(event, request);
 
         verify(eventService).save(event);
-        verify(eventService).notifyStudents(event);
+        verify(eventService).notifyStudents(event, studentService.getEmailIds(event.getSidsOfEligibleStudents()));
         assertViewName(modelAndView, "event_creation_page");
         assertModelAttributeAvailable(modelAndView, "event");
     }

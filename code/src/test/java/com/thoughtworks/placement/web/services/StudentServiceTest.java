@@ -24,7 +24,7 @@ public class StudentServiceTest {
     public void testFindByUserId() throws Exception {
         Student student = service.find("shirish");
         assertNotNull(student);
-        assertEquals("Username should be same", "shirish", student.getSID());
+        assertEquals("Username should be same", "shirish", student.getSid());
     }
 
     @Test

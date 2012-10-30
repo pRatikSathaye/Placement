@@ -70,7 +70,7 @@
                <div class="control-group">
                    <div id="listOfEligibleStudents" class="controls">
                    </div>
-                   #springFormHiddenInput ('event.emailIdsOfEligibleStudents', '')
+                   #springFormHiddenInput ('event.sidsOfEligibleStudents', '')
                </div>
            </fieldset>
             <fieldset title="Step 5">
@@ -144,15 +144,16 @@
                     });
             });
 
-            $("#event_form-next-3").click(function(){
+            $("#event_form-next-3").click(function(e){
                 var students = [];
+                e.preventDefault(); //stop the default form action
                 $('td input:checked').each(function () {
-                    var emailID=$(this).closest("tr").children("td")[4];
-                    if($(emailID).text()) {
-                        students.push($(emailID).text());
+                    var sid = $(this).attr("value");
+                    if(sid !== "on") {
+                        students.push(sid);
                     }
                 });
-                document.getElementById("emailIdsOfEligibleStudents").value=students;
+                document.getElementById("sidsOfEligibleStudents").value=students;
             });
         });
     </script>

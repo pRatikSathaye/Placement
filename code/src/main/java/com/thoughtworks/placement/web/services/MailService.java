@@ -9,6 +9,7 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.List;
 
 @Component
 public class MailService {
@@ -25,10 +26,9 @@ public class MailService {
         mailSender.send(message);
     }
 
-    public void notifyStudents(Event event) {
+    public void notifyStudents(Event event, List<String> emailIds) {
         String messageBody = createMessageBody(event.getCompany(), event.getDate());
-        String[] to = event.getEmailIdsOfEligibleStudents().split(",");
-        sendMail("dummy@dummy.com", to,"About Campus",messageBody);
+        sendMail("dummy@dummy.com", emailIds.toArray(new String[emailIds.size()]),"About Campus",messageBody);
     }
 
     private String createMessageBody(Company company, Date date) {
